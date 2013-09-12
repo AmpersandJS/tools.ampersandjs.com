@@ -1,10 +1,9 @@
 /*global console*/
 var express = require('express');
 var helmet = require('helmet');
-var Moonboots = require('moonboots');
 var config = require('getconfig');
 var semiStatic = require('semi-static');
-var templatizer = require('templatizer');
+var clientApp = require('./clientApp');
 var app = express();
 
 
@@ -32,25 +31,7 @@ app.set('view engine', 'jade');
 // ---------------------------------------------------
 // Configure Moonboots to serve our client application
 // ---------------------------------------------------
-var clientApp = new Moonboots({
-    main: __dirname + '/clientapp/app.js',
-    server: app,
-    jsFileName: 'resources',
-    cssFileName: 'resources',
-    developmentMode: config.isDev,
-    libraries: [
-        __dirname + '/clientapp/libraries/zepto.js'
-    ],
-    stylesheets: [
-        __dirname + '/public/css/bootstrap.min.css',
-        __dirname + '/public/css/bootstrap-theme.min.css',
-        __dirname + '/public/css/app.css'
-    ],
-    beforeBuild: function () {
-        var clientFolder = __dirname + '/clientapp';
-        templatizer(clientFolder + '/templates', clientFolder + '/templates.js');
-    }
-});
+var clientApp = clientApp(app, {developmentMode: config.isDev});
 
 // Enable the functional test site in development
 if (config.isDev) {

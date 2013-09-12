@@ -20,14 +20,16 @@ module.exports = PageView.extend({
     },
     handleQueryChange: function () {
         var val = me.query;
+        var pathname = location.pathname;
         this.collection.filter(val);
         if (document.activeElement !== this.searchEl) {
             this.searchEl.value = val;
         }
+
         if (val) {
-            window.history.replaceState({}, '', '?q=' + val);
+            window.history.replaceState({}, '', pathname + '?q=' + val);
         } else {
-            window.history.replaceState({}, '', '/');
+            window.history.replaceState({}, '', pathname);
         }
     }
 });
