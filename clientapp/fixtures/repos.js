@@ -21,14 +21,6 @@ module.exports = [
         tags: ['server', 'assets']
     },
     {
-        id: 'browserify',
-        author: 'substack',
-        github: 'node-browserify',
-        description: 'browser-side require() the node way.',
-        repoType: 'server',
-        tags: ['server', 'assets']
-    },
-    {
         id: 'simplewebrtc',
         description: "World's easiest WebRTC",
         tags: ['webrtc']
@@ -174,5 +166,22 @@ module.exports = [
         id: 'zepto-detect',
         description: 'The detect portion of zepto.js structured for use with browserify.',
         tags: ['detect', 'browser']
+    },
+    {
+        id: 'hark',
+        author: 'latentflip',
+        description: 'Hark is a tiny browser/commonJS module that listens to an audio stream, and emits events indicating whether the user is speaking or not.',
+        tags: ['webrtc', 'audio', 'media']
+    },
+    {
+        id: 'bows',
+        author: 'latentflip',
+        description: 'Safe, production happy, colourful logging for chrome - makes reading your logs much easier.',
+        tags: ['logging', 'debugging', 'development']
+    },
+    {
+        id: 'andlog',
+        description: 'Safely leave console statements in production',
+        tags: ['logging', 'debugging', 'development']
     }
 ];
