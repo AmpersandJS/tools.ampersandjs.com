@@ -1,0 +1,32 @@
+.repo {
+  display: none;
+  float: left;
+  width: 262px;
+  height: 200px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.repo h3 {
+  position: absolute;
+  font-size: 20px;
+  top: 0px;
+}
+.repo h3 small {
+  display: block;
+  font-size: 12px;
+  padding-top: 5px;
+}
+.repo .tags {
+  position: absolute;
+  bottom: 5px;
+}
+.repo .description {
+  font-size: 14px;
+  position: absolute;
+  top: 70px;
+  width: 225px;
+}
+.repo.active {
+  display: inline-block;
+}

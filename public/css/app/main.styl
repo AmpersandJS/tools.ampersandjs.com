@@ -1,0 +1,39 @@
+// app/layout.styl
+
+@import '../_variables'
+@import '../_mixins'
+
+*
+    boderbox()
+
+.repo
+    display: none
+    float: left
+    width: 262px
+    height: 200px
+    margin: 15px
+    position: relative
+    overflow: hidden
+
+    h3
+        position: absolute
+        font-size: 20px
+        top: 0px
+
+        small
+            display: block
+            font-size: 12px
+            padding-top: 5px
+
+    .tags
+        position: absolute
+        bottom: 5px
+
+    .description
+        font-size: 14px
+        position: absolute
+        top: 70px
+        width: 225px
+
+.repo.active
+    display: inline-block

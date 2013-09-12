@@ -1,0 +1,28 @@
+{
+  "name": "resources",
+  "version": "0.0.1",
+  "author": "Henrik Joreteg <henrik@andyet.net>",
+  "description": "Curated collection of simple modules solving specific clientside problems.",
+  "dependencies": {
+    "andlog": "0.0.4",
+    "async": "0.2.9",
+    "backbone": "1.0.0",
+    "clientconfig": "0.0.4",
+    "express": "3.3.6",
+    "getconfig": "0.0.5",
+    "jade": "0.35.0",
+    "loading-stats": "0.0.2",
+    "moonboots": "0.5.1",
+    "helmet": "0.1.0",
+    "semi-static": "0.0.4",
+    "human-model": "1.0.0",
+    "human-view": "1.1.0",
+    "templatizer": "0.1.2",
+    "underscore": "1.5.1",
+    "favicon-setter": "0.1.1"
+  },
+  "devDependencies": {
+    "precommit-hook": "0.3.6"
+  },
+  "main": "server.js"
+}
