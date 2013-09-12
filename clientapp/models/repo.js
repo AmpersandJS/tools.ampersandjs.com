@@ -9,9 +9,9 @@ module.exports = HumanModel.define({
         repoType: ['string', true, 'client'],
         description: ['string', true],
         tags: ['array', true],
-        npm: 'string',
-        author: ['string', true, 'henrikjoreteg'],
-        github: ['string', true]
+        author: ['string', true, 'HenrikJoreteg'],
+        github: 'string',
+        githubUser: 'string'
     },
     derived: {
         tagLinks: {
@@ -24,7 +24,7 @@ module.exports = HumanModel.define({
         searchString: {
             cache: true,
             fn: function () {
-                return [this.id, this.description].concat(this.tags).join(' ').toLowerCase();
+                return [this.id, this.description, this.author, this.github].concat(this.tags).join(' ').toLowerCase();
             }
         },
         npmUrl: {
@@ -36,7 +36,19 @@ module.exports = HumanModel.define({
         githubUrl: {
             cache: true,
             fn: function () {
-                return 'https://github.com/' + this.author + '/' + (this.github || this.id);
+                return this.githubUserUrl + '/' + (this.github || this.id);
+            }
+        },
+        githubUserUrl: {
+            cache: true,
+            fn: function () {
+                return 'https://github.com/' + (this.githubUser || this.author);
+            }
+        },
+        npmUserUrl: {
+            cache: true,
+            fn: function () {
+                return 'http://npmjs.org/~' + this.author.toLowerCase();
             }
         }
     },

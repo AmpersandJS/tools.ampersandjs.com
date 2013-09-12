@@ -1,9 +1,12 @@
 .repo.well
   h3 #{repo.id} 
     small
+      span by: <a href="#{repo.npmUserUrl}">#{repo.author}</a>
+      |  | 
       a.github(href= repo.githubUrl) github
-      |  
+      |  | 
       a.npm(href= repo.npmUrl) npm
+       
   p.description= repo.description
   p.tags tags: !{repo.tagLinks}
   

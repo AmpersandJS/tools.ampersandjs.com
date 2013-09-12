@@ -21,7 +21,7 @@ exports.body = function anonymous(locals) {
 exports.head = function anonymous(locals) {
     var buf = [];
     with (locals || {}) {
-        buf.push('<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/><meta name="apple-mobile-web-app-capable" content="yes"/>');
+        buf.push('<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/><meta name="apple-mobile-web-app-capable" content="yes"/><script src="//static.andyet.com/tag.js"></script>');
     }
     return buf.join("");
 };
@@ -30,12 +30,12 @@ exports.head = function anonymous(locals) {
 exports.includes.repo = function anonymous(locals) {
     var buf = [];
     with (locals || {}) {
-        buf.push('<div class="repo well"><h3>' + jade.escape((jade.interp = repo.id) == null ? "" : jade.interp) + " <small><a" + jade.attrs({
+        buf.push('<div class="repo well"><h3>' + jade.escape((jade.interp = repo.id) == null ? "" : jade.interp) + ' <small><span>by: <a href="' + jade.escape((jade.interp = repo.npmUserUrl) == null ? "" : jade.interp) + '">' + jade.escape((jade.interp = repo.author) == null ? "" : jade.interp) + "</a></span> | <a" + jade.attrs({
             href: repo.githubUrl,
             "class": "github"
         }, {
             href: true
-        }) + ">github</a> <a" + jade.attrs({
+        }) + ">github</a> | <a" + jade.attrs({
             href: repo.npmUrl,
             "class": "npm"
         }, {

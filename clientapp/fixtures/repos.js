@@ -185,5 +185,21 @@ module.exports = [
         id: 'andlog',
         description: 'Safely leave console statements in production',
         tags: ['logging', 'debugging', 'development']
+    },
+    {
+        id: 'event-component',
+        description: 'Event binding component for DOM events.',
+        author: 'tjholowaychuk',
+        githubUser: 'component',
+        github: 'event',
+        tags: ['events', 'dom']
+    },
+    {
+        id: 'classes-component',
+        description: 'Cross-browser element class manipulation.',
+        author: 'tjholowaychuk',
+        githubUser: 'component',
+        github: 'event',
+        tags: ['dom']
     }
 ];
