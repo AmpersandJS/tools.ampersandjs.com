@@ -11,13 +11,23 @@ module.exports = PageView.extend({
     render: function () {
         this.renderAndBind();
         this.renderCollection(this.collection, RepoView, this.$('.repoList')[0]);
+        this.searchEl = this.$('#search')[0];
         this.listenToAndRun(me, 'change:query', this.handleQueryChange);
         return this;
     },
-    handleSearchKeyUp: function (event) {
-        me.query = event.target.value;
+    handleSearchKeyUp: function () {
+        me.query = this.searchEl.value;
     },
     handleQueryChange: function () {
-        this.collection.filter(me.query);
+        var val = me.query;
+        this.collection.filter(val);
+        if (document.activeElement !== this.searchEl) {
+            this.searchEl.value = val;
+        }
+        if (val) {
+            window.history.replaceState({}, '', '?q=' + val);
+        } else {
+            window.history.replaceState({}, '', '/');
+        }
     }
 });

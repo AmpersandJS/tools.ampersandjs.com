@@ -10,6 +10,7 @@ var tracking = require('./helpers/metrics');
 var MainView = require('./views/main');
 var Me = require('./models/me');
 var Repos = require('./models/repos');
+var qs = require('querystring');
 
 
 module.exports = {
@@ -23,7 +24,10 @@ module.exports = {
 
         window.templates = require('./templates');
 
-        window.me = new Me();
+        window.me = new Me({
+            query: qs.parse(location.href.split('?')[1]).q || ''
+        });
+
         this.repos = new Repos();
 
         // init our URL handlers and the history tracker
@@ -40,7 +44,7 @@ module.exports = {
             });
             self.view.render();
             // we have what we need, we can now start our router and show the appropriate page
-            self.history.start({pushState: true, root: '/'});
+            self.history.start();
         });
     },
 

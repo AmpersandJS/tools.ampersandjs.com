@@ -5,8 +5,7 @@ var ReposPage = require('./pages/repos');
 
 module.exports = Backbone.Router.extend({
     routes: {
-        '': 'repos',
-        'repo/:user/:project': 'repoDetail'
+        '': 'repos'
     },
 
     // ------- ROUTE HANDLERS ---------
