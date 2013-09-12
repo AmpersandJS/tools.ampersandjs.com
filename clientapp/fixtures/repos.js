@@ -73,6 +73,7 @@ module.exports = [
     },
     {
         id: 'image-to-data-uri',
+        github: 'image-to-data-uri.js',
         description: 'Takes an image url, downloads the image and creates a data URI for caching, etc.',
         tags: ['image', 'data-uri', 'canvas']
     },
@@ -123,6 +124,7 @@ module.exports = [
     },
     {
         id: 'system-requirements',
+        github: 'system-requirements.js',
         description: "Boxed software has 'em, now the web does too. Specify minimum allowed browsers and versions.",
         tags: ['browsers']
     },
