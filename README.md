@@ -1,3 +1,5 @@
 # human javascript resources
 
-App for fast searching of curated modules.
+Powers this: http://projects.joreteg.com/humanjs-resources
+
+An app for fast searching of curated modules.
