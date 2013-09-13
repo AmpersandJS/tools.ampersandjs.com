@@ -21,7 +21,7 @@ exports.body = function anonymous(locals) {
 exports.head = function anonymous(locals) {
     var buf = [];
     with (locals || {}) {
-        buf.push('<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/><meta name="apple-mobile-web-app-capable" content="yes"/><script src="//static.andyet.com/tag.js"></script>');
+        buf.push('<link rel="apple-touch-icon" href="puclic/images/icon-57.png"/><link rel="apple-touch-icon" sizes="72x72" href="puclic/images/icon-72.png"/><link rel="apple-touch-icon" sizes="114x114" href="puclic/images/icon-114.png"/><link rel="apple-touch-icon" sizes="144x144" href="puclic/images/icon-144.png"/><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/><meta name="apple-mobile-web-app-capable" content="yes"/>');
     }
     return buf.join("");
 };
