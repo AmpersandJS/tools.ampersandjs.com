@@ -14,8 +14,6 @@ files.forEach(function (filename) {
 var cache = ['CACHE MANIFEST'];
 
 cache.push('#' + Date.now() + ' <- time when generated');
-cache.push('/humanjs-resources/');
-
 
 client.build(__dirname, function (err) {
     cache.push(client.result.jsMinFileName);
