@@ -13,7 +13,7 @@ files.forEach(function (filename) {
 
 var cache = ['CACHE MANIFEST'];
 
-cache.push(Date.now());
+cache.push('#' + Date.now());
 cache.push('/humanjs-resources/');
 
 
