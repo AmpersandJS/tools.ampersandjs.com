@@ -201,5 +201,10 @@ module.exports = [
         githubUser: 'component',
         github: 'event',
         tags: ['dom']
+    },
+    {
+        id: 'query-param-getter',
+        description: 'Module for grabbing query parameters by name from the URL. Result is purposely not cached since URL can change.',
+        tags: ['query', 'param', 'url']
     }
 ];

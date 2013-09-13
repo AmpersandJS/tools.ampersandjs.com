@@ -10,8 +10,7 @@ var tracking = require('./helpers/metrics');
 var MainView = require('./views/main');
 var Me = require('./models/me');
 var Repos = require('./models/repos');
-var qs = require('querystring');
-
+var queryParam = require('query-param-getter');
 
 module.exports = {
     // this is the the whole app initter
@@ -20,12 +19,14 @@ module.exports = {
         // to the main app object.
         _.extend(this, Backbone.Events);
 
+
+
         var self = window.app = this;
 
         window.templates = require('./templates');
 
         window.me = new Me({
-            query: qs.parse(location.href.split('?')[1]).q || ''
+            query: queryParam('q')
         });
 
         this.repos = new Repos();

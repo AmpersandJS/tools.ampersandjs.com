@@ -20,7 +20,7 @@
     "templatizer": "0.1.2",
     "underscore": "1.5.1",
     "favicon-setter": "0.1.1",
-    "zepto-detect": "0.0.0"
+    "query-param-getter": "0.0.1"
   },
   "devDependencies": {
     "precommit-hook": "0.3.6"

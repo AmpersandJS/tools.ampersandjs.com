@@ -9,7 +9,6 @@ var templates = require('../templates');
 //var key = require('keymaster');
 var tracking = require('../helpers/metrics');
 var setFavicon = require('favicon-setter');
-var detect = require('zepto-detect');
 
 
 module.exports = HumanView.extend({
