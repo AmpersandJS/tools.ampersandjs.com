@@ -6,7 +6,6 @@ module.exports = function (app, config) {
     var opts = _.extend({
         main: __dirname + '/clientapp/app.js',
         server: app,
-        templateFile: __dirname + '/clientapp/index.html',
         jsFileName: 'resources',
         cssFileName: 'resources',
         developmentMode: config.isDev,

@@ -9,6 +9,7 @@ var templates = require('../templates');
 //var key = require('keymaster');
 var tracking = require('../helpers/metrics');
 var setFavicon = require('favicon-setter');
+var detect = require('zepto-detect');
 
 
 module.exports = HumanView.extend({
@@ -41,6 +42,9 @@ module.exports = HumanView.extend({
         if (local) {
             app.navigate(path);
             return false;
+        } else if (window.navigator.standalone) {
+            // open external in a new window if iOS installed
+            window.open(aEl.href);
         }
     },
 
