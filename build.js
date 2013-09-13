@@ -11,6 +11,15 @@ files.forEach(function (filename) {
     }
 });
 
+var cache = ['CACHE MANIFEST'];
+
+cache.push(Date.now());
+cache.push('/humanjs-resources/');
+
+
 client.build(__dirname, function (err) {
+    cache.push(client.result.jsMinFileName);
+    cache.push(client.result.cssMinFileName);
+    fs.writeFileSync('manifest.appcache', cache.join('\n'));
     if (!err) console.log('done!');
 });
