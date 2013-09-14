@@ -26,7 +26,7 @@ module.exports = {
         window.templates = require('./templates');
 
         window.me = new Me({
-            query: queryParam('q')
+            query: queryParam('q') || ''
         });
 
         this.repos = new Repos();
