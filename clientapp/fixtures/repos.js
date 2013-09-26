@@ -206,5 +206,13 @@ module.exports = [
         id: 'query-param-getter',
         description: 'Module for grabbing query parameters by name from the URL. Result is purposely not cached since URL can change.',
         tags: ['query', 'param', 'url']
+    },
+    {
+        id: 'raf-component',
+        description: 'Request animation frame API with fallback and cancel support',
+        author: 'tjholowaychuk',
+        githubUser: 'component',
+        github: 'raf',
+        tags: ['animation', 'canvas', 'rendering']
     }
 ];
