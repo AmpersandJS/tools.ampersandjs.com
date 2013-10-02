@@ -218,11 +218,11 @@ module.exports = [
     {
         id: 'transform-style',
         description: 'Apply transform style property with proper prefix to an element. For use with browserify / CommonJS.',
-        tags: ['performance', 'dom', 'css', 'rendering']
+        tags: ['performance', 'dom', 'css']
     },
     {
         id: 'translatez-hack',
         description: 'Apply the translateZ hack in a cross-browser way',
-        tags: ['performance', 'dom', 'css', 'rendering']
+        tags: ['performance', 'dom', 'css']
     }
 ];
