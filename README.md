@@ -11,4 +11,4 @@ Check out http://humanjavscript.com and follow [@HenrikJoreteg](http://twitter.c
 
 ## caveats
 
-For some reason github doesn't always trigger rebuilds of gh-pages when pushed. If it doesn't work, make sure you ran `node build`, change something else, and push again. Hopefully they fix this issue soon.
+For some reason github doesn't always trigger rebuilds of gh-pages when pushed. If it doesn't work, make sure you ran `node build`, change something else, and push it again. Hopefully they fix this issue soon.
