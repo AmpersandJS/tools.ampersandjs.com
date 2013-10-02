@@ -214,5 +214,15 @@ module.exports = [
         githubUser: 'component',
         github: 'raf',
         tags: ['animation', 'canvas', 'rendering']
+    },
+    {
+        id: 'transform-style',
+        description: 'Apply transform style property with proper prefix to an element. For use with browserify / CommonJS.',
+        tags: ['performance', 'dom', 'css', 'rendering']
+    },
+    {
+        id: 'translatez-hack',
+        description: 'Apply the translateZ hack in a cross-browser way',
+        tags: ['performance', 'dom', 'css', 'rendering']
     }
 ];
