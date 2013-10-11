@@ -21,7 +21,7 @@ exports.body = function anonymous(locals) {
 exports.head = function anonymous(locals) {
     var buf = [];
     with (locals || {}) {
-        buf.push('<link rel="apple-touch-icon" href="public/images/Icon-57.png"/><link rel="apple-touch-icon" sizes="72x72" href="public/images/Icon-72.png"/><link rel="apple-touch-icon" sizes="114x114" href="public/images/Icon-114.png"/><link rel="apple-touch-icon" sizes="144x144" href="public/images/Icon-144.png"/><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/><meta name="apple-mobile-web-app-capable" content="yes"/>');
+        buf.push('<link rel="apple-touch-icon" href="public/images/Icon-57.png"/><link rel="apple-touch-icon" sizes="72x72" href="public/images/Icon-72.png"/><link rel="apple-touch-icon" sizes="114x114" href="public/images/Icon-114.png"/><link rel="apple-touch-icon" sizes="144x144" href="public/images/Icon-144.png"/><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/><meta name="apple-mobile-web-app-capable" content="yes"/><script>(function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\n(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\nm=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n})(window,document,\'script\',\'//www.google-analytics.com/analytics.js\',\'ga\');\n\nga(\'create\', \'UA-44685415-1\', \'humanjavascript.com\');\nga(\'send\', \'pageview\');</script>');
     }
     return buf.join("");
 };
