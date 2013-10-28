@@ -229,5 +229,13 @@ module.exports = [
         id: 'tryit',
         description: 'Cleaner API to try-catch in JS.',
         tags: ['error', 'try', 'exception']
+    },
+    {
+        id: 'moonboots_hapi',
+        githubUser: 'wraithgar',
+        github: 'moonboots-hapi',
+        author: 'gar',
+        description: 'Moonboots adapted for hapi',
+        tags: ['server', 'assets']
     }
 ];
