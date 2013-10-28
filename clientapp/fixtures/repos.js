@@ -224,5 +224,10 @@ module.exports = [
         id: 'translatez-hack',
         description: 'Apply the translateZ hack in a cross-browser way',
         tags: ['performance', 'dom', 'css']
+    },
+    {
+        id: 'tryit',
+        description: 'Cleaner API to try-catch in JS.',
+        tags: ['error', 'try', 'exception']
     }
 ];
