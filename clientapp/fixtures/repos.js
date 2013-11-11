@@ -195,14 +195,6 @@ module.exports = [
         tags: ['events', 'dom']
     },
     {
-        id: 'classes-component',
-        description: 'Cross-browser element class manipulation.',
-        author: 'tjholowaychuk',
-        githubUser: 'component',
-        github: 'event',
-        tags: ['dom']
-    },
-    {
         id: 'query-param-getter',
         description: 'Module for grabbing query parameters by name from the URL. Result is purposely not cached since URL can change.',
         tags: ['query', 'param', 'url']
@@ -237,5 +229,15 @@ module.exports = [
         author: 'gar',
         description: 'Moonboots adapted for hapi',
         tags: ['server', 'assets']
+    },
+    {
+        id: 'array-jumper',
+        description: 'Jump forward or backward through an array by an index based on an item already in the array.',
+        tags: ['array', 'util']
+    },
+    {
+        id: 'add-keyup-events',
+        description: 'Emit custom events from an input so you can do stuff like listening for "enter" and "esc" events the same way as you would "keyup".',
+        tags: ['events', 'dom', 'keyboard', 'input']
     }
 ];
