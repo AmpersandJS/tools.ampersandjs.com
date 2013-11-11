@@ -236,6 +236,11 @@ module.exports = [
         tags: ['array', 'util']
     },
     {
+        id: 'array-next',
+        description: 'Advance to the next item in the array looping when hitting the end.',
+        tags: ['array', 'util']
+    },
+    {
         id: 'add-keyup-events',
         description: 'Emit custom events from an input so you can do stuff like listening for "enter" and "esc" events the same way as you would "keyup".',
         tags: ['events', 'dom', 'keyboard', 'input']
