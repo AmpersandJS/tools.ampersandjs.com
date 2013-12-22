@@ -244,5 +244,10 @@ module.exports = [
         id: 'add-keyup-events',
         description: 'Emit custom events from an input so you can do stuff like listening for "enter" and "esc" events the same way as you would "keyup".',
         tags: ['events', 'dom', 'keyboard', 'input']
+    },
+    {
+        id: 'bind-transforms',
+        description: 'Bind models properties to properly prefixed CSS transforms in backbone/humanjs views.',
+        tags: ['backbone', 'view', 'dom', 'binding']
     }
 ];
