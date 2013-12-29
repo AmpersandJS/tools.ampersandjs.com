@@ -249,5 +249,13 @@ module.exports = [
         id: 'bind-transforms',
         description: 'Bind models properties to properly prefixed CSS transforms in backbone/humanjs views.',
         tags: ['backbone', 'view', 'dom', 'binding']
+    },
+    {
+        id: 'hammerjs',
+        description: 'Normalizes touch and mouse events between browsers. Making gesture events much easier to work with.',
+        author: 'jtangelder',
+        tags: ['events', 'mobile', 'touch', 'mouse'],
+        githubUser: 'eightmedia',
+        github: 'hammer.js'
     }
 ];
