@@ -23,7 +23,12 @@
     "query-param-getter": "0.0.1"
   },
   "devDependencies": {
-    "precommit-hook": "0.3.6"
+    "precommit-hook": "0.3.6",
+    "servedir": "*"
   },
-  "main": "server.js"
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run build && servedir .",
+    "build": "node ./build.js"
+  }
 }

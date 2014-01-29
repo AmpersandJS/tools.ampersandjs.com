@@ -257,5 +257,10 @@ module.exports = [
         tags: ['events', 'mobile', 'touch', 'mouse'],
         githubUser: 'eightmedia',
         github: 'hammer.js'
+    },
+    {
+        id: 'backbone-events-standalone',
+        author: 'n1k0',
+        tags: ['events', 'backbone']
     }
 ];
