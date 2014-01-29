@@ -262,5 +262,10 @@ module.exports = [
         id: 'backbone-events-standalone',
         author: 'n1k0',
         tags: ['events', 'backbone']
+    },
+    {
+        id: 'human-view-switcher',
+        description: 'A utility for swapping out humanjs or backbone views inside an element.',
+        tags: ['views', 'backbone', 'DOM']
     }
 ];
