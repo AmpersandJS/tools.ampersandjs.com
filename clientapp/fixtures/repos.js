@@ -267,5 +267,11 @@ module.exports = [
         id: 'human-view-switcher',
         description: 'A utility for swapping out humanjs or backbone views inside an element.',
         tags: ['views', 'backbone', 'DOM']
+    },
+    {
+        id: 'pikaday',
+        description: 'Lightweight app-friendly datepicker',
+        author: 'dbushell',
+        tags: ['date', 'view', 'datepicker']
     }
 ];
