@@ -50,10 +50,7 @@ module.exports = HumanView.extend({
         app.currentPage = this;
 
         // set the document title
-        document.title = function () {
-            var title = _.result(self, 'title');
-            return title ? title + ' • humanjs' : 'humanjs';
-        }();
+        document.title = 'ampersand.js - tools';
 
         // trigger an event to the page model in case we want to respond
         this.trigger('pageloaded');
