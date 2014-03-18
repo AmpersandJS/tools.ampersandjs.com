@@ -12,7 +12,7 @@ exports.pages = {};
 exports.body = function anonymous(locals) {
     var buf = [];
     with (locals || {}) {
-        buf.push('<body><div class="container"><nav role="navigation" class="navbar navbar-default"><div class="navbar-header"><a href="#" class="navbar-brand">human javascript &mdash; resources</a></div></nav><section id="pages"></section></div></body>');
+        buf.push('<body><div class="container"><nav role="navigation" class="navbar navbar-default"><div class="navbar-header"><a href="#" class="navbar-brand">tools.ampersandjs.com &mdash; hand-picked clientside modules installable from npm </a></div></nav><section id="pages"></section></div></body>');
     }
     return buf.join("");
 };

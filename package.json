@@ -2,11 +2,10 @@
   "name": "resources",
   "version": "0.0.1",
   "author": "Henrik Joreteg <henrik@andyet.net>",
-  "description": "Curated collection of simple modules solving specific clientside problems.",
+  "description": "Curated set of small clientside modules that solve a single problem.",
   "dependencies": {
     "andlog": "0.0.4",
     "async": "0.2.9",
-    "backbone": "1.0.0",
     "clientconfig": "0.0.4",
     "express": "3.3.6",
     "getconfig": "0.0.5",
@@ -15,12 +14,15 @@
     "moonboots": "0.6.1",
     "helmet": "0.1.0",
     "semi-static": "0.0.4",
-    "human-model": "1.0.0",
-    "human-view": "1.1.0",
     "templatizer": "0.1.2",
     "underscore": "1.5.1",
     "favicon-setter": "0.1.1",
-    "query-param-getter": "0.0.1"
+    "query-param-getter": "0.0.1",
+    "ampersand-collection-underscore-mixin": "~0.1.0",
+    "ampersand-collection": "~0.2.2",
+    "ampersand-model": "~2.7.1",
+    "ampersand-view": "~2.0.2",
+    "ampersand-router": "~0.1.0"
   },
   "devDependencies": {
     "precommit-hook": "0.3.6",

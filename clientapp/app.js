@@ -15,12 +15,6 @@ var queryParam = require('query-param-getter');
 module.exports = {
     // this is the the whole app initter
     blastoff: function (spec) {
-        // add the ability to bind/unbind/trigger events
-        // to the main app object.
-        _.extend(this, Backbone.Events);
-
-
-
         var self = window.app = this;
 
         window.templates = require('./templates');
@@ -33,7 +27,6 @@ module.exports = {
 
         // init our URL handlers and the history tracker
         this.router = new Router();
-        this.history = Backbone.history;
 
         // wait for document ready to render our main view
         // this ensures the document has a body, etc.
@@ -45,7 +38,7 @@ module.exports = {
             });
             self.view.render();
             // we have what we need, we can now start our router and show the appropriate page
-            self.history.start();
+            self.router.history.start();
         });
     },
 
@@ -56,7 +49,7 @@ module.exports = {
     // for example: "costello/settings".
     navigate: function (page) {
         var url = (page.charAt(0) === '/') ? page.slice(1) : page;
-        app.history.navigate(url, true);
+        app.router.history.navigate(url, true);
     },
 
     // this is what handles all the page rendering and

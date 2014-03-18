@@ -1,9 +1,9 @@
 /*global app, me, $*/
-var Backbone = require('backbone');
+var Router = require('ampersand-router');
 var ReposPage = require('./pages/repos');
 
 
-module.exports = Backbone.Router.extend({
+module.exports = Router.extend({
     routes: {
         '': 'repos'
     },

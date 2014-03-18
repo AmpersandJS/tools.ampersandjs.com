@@ -1,9 +1,8 @@
-# human javascript resources
+# tools.ampersandjs.com
 
-Powers this: http://projects.joreteg.com/humanjs-resources
+A curated set of clientside modules that represent "solved problems" for npm-listed clientside modules that closely follow the philosophy of ampersand.
 
-An app for fast searching of curated modules.
-
+If you need something that ampersand doesn't do, odds are good that there's something here that may.
 
 ## for more info
 

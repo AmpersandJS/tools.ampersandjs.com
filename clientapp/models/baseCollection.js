@@ -1,8 +1,9 @@
 // our base collection
-var Backbone = require('backbone');
+var Collection = require('ampersand-collection');
+var underscoreMixins = require('ampersand-collection-underscore-mixin');
 
 
-module.exports = Backbone.Collection.extend({
+module.exports = Collection.extend(underscoreMixins, {
     // ###next
     // returns next item when given an item in the collection
     next: function (item, filter, start) {

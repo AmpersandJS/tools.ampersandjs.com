@@ -1,7 +1,7 @@
-var HumanModel = require('human-model');
+var Model = require('ampersand-model');
 
 
-module.exports = HumanModel.define({
+module.exports = Model.extend({
     type: 'repo',
     props: {
         // npm slug

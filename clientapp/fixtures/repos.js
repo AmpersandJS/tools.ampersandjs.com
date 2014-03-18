@@ -5,16 +5,6 @@ module.exports = [
         tags: ['config']
     },
     {
-        id: 'human-model',
-        description: "Drop-in replacement for Backbone Models with more structure and features.",
-        tags: ['model', 'backbone', 'mvc']
-    },
-    {
-        id: 'human-view',
-        description: 'A smart base view for Backbone apps, to make it easy to bind collections and properties to the DOM.',
-        tags: ['backbone', 'view', 'mvc']
-    },
-    {
         id: 'moonboots',
         description: 'A set of tools and conventions for building/serving clientside apps with node.js.',
         repoType: 'server',
@@ -31,10 +21,76 @@ module.exports = [
         tags: ['webrtc', 'media']
     },
     {
-        id: 'humanjs',
-        github: 'humanjs-app-generator',
+        id: 'ampersand',
         description: 'Single page app scaffolding following http://humanjavascript.com conventions.',
-        tags: ['tools', 'scaffolding']
+        githubUser: 'ampersandjs',
+        tags: ['ampersand', 'tools', 'scaffolding']
+    },
+    {
+        id: 'ampersand-collection',
+        description: 'A tool for storing/retrieving JS objects or models.',
+        githubUser: 'ampersandjs',
+        tags: ['ampersand', 'collection', 'model']
+    },
+    {
+        id: 'ampersand-rest-collection',
+        description: 'ampersand-collection extended with methods for working with RESTful APIs.',
+        githubUser: 'ampersandjs',
+        tags: ['ampersand', 'collection', 'model', 'api']
+    },
+    {
+        id: 'ampersand-collection-underscore-mixin',
+        description: 'Mixin for adding underscore methods to ampersand-collection.',
+        githubUser: 'ampersandjs',
+        tags: ['ampersand', 'collection', 'model']
+    },
+    {
+        id: 'ampersand-model',
+        description: 'For modeling data in your application.',
+        githubUser: 'ampersandjs',
+        tags: ['ampersand', 'model']
+    },
+    {
+        id: 'ampersand-state',
+        description: 'A low-level object for managing complex state. This is what ampersand-model is built on.',
+        githubUser: 'ampersandjs',
+        tags: ['ampersand', 'model']
+    },
+    {
+        id: 'ampersand-router',
+        description: 'Clientside router with fallbacks for browsers sans pushState. Mostly lifted from Backbone.js.',
+        githubUser: 'ampersandjs',
+        tags: ['ampersand', 'router']
+    },
+    {
+        id: 'ampersand-view-switcher',
+        description: 'A utility for swapping out views inside a container element.',
+        githubUser: 'ampersandjs',
+        tags: ['ampersand', 'router']
+    },
+    {
+        id: 'ampersand-sync',
+        description: 'Standalone, modern-browser-only version of Backbone.Sync as Common JS module.',
+        githubUser: 'ampersandjs',
+        tags: ['ampersand', 'api', 'rest']
+    },
+    {
+        id: 'ampersand-view',
+        description: 'A tool for managing rendering, binding to the DOM.',
+        githubUser: 'ampersandjs',
+        tags: ['ampersand', 'view']
+    },
+    {
+        id: 'ampersand-registry',
+        description: 'Global model registry for tracking instantiated models accross collections.',
+        githubUser: 'ampersandjs',
+        tags: ['ampersand', 'model', 'registry']
+    },
+    {
+        id: 'ampersand-class-extend',
+        description: 'JS class extension tool for enabling easily extending prototype with multiple objects.',
+        githubUser: 'ampersandjs',
+        tags: ['ampersand', 'class', 'extend']
     },
     {
         id: 'attachmediastream',
@@ -251,6 +307,16 @@ module.exports = [
         tags: ['backbone', 'view', 'dom', 'binding']
     },
     {
+        id: 'get-result',
+        description: 'Utility function for getting a named property from an object. Works for values and functions.',
+        tags: ['util', 'result']
+    },
+    {
+        id: 'extend-object',
+        description: 'Underscore\'s extend method as a standalone Common JS module.',
+        tags: ['util', 'extend', 'underscore']
+    },
+    {
         id: 'hammerjs',
         description: 'Normalizes touch and mouse events between browsers. Making gesture events much easier to work with.',
         author: 'jtangelder',
@@ -262,11 +328,6 @@ module.exports = [
         id: 'backbone-events-standalone',
         author: 'n1k0',
         tags: ['events', 'backbone']
-    },
-    {
-        id: 'human-view-switcher',
-        description: 'A utility for swapping out humanjs or backbone views inside an element.',
-        tags: ['views', 'backbone', 'DOM']
     },
     {
         id: 'pikaday',

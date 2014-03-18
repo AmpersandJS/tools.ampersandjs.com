@@ -2,6 +2,7 @@ var BaseCollection = require('./baseCollection');
 var Repo = require('./repo');
 var data = require('../fixtures/repos');
 
+
 module.exports = BaseCollection.extend({
     initialize: function () {
         this.add(data);
