@@ -334,5 +334,47 @@ module.exports = [
         description: 'Lightweight app-friendly datepicker',
         author: 'dbushell',
         tags: ['date', 'view', 'datepicker']
+    },
+    {
+        id: 'fastclick',
+        description: 'Polyfill to remove click delays on browsers with touch UIs.',
+        author: 'ftlabs',
+        tags: ['mobile', 'touch']
+    },
+    {
+        id: 'stylizer',
+        description: 'Integrate stylus, and stylus plugins, into a node project.',
+        author: 'latentflip',
+        tags: ['CSS', 'stylus']
+    },
+    {
+        id: 'moment',
+        description: 'JS date library for parsing, validating, manipulating, and formatting dates.',
+        author: 'moment',
+        tags: ['date', 'validation']
+    },
+    {
+        id: 'precommit-hook',
+        description: 'A useful pre-commit hook for git based projects that lints and runs npm test.',
+        author: 'nlf',
+        tags: ['git', 'precommit', 'testing', 'linting']
+    },
+    {
+        id: 'nodemon',
+        description: 'Monitor for any changes in your node.js application and automatically restart the server.',
+        author: 'remy',
+        tags: ['development', 'monitoring']
+    },
+    {
+        id: 'lodash-node',
+        description: 'A collection of Lo-Dash methods as Node.js modules. Useful for custom and modern builds.',
+        author: 'lodash',
+        tags: ['utility']
+    },
+    {
+        id: 'async',
+        description: 'Async utilities for node and the browser.',
+        author: 'caolan',
+        tags: ['utility', 'async']
     }
 ];

@@ -1,3 +1,4 @@
+/*global console*/
 var clientApp = require('./clientApp');
 var fs = require('fs');
 

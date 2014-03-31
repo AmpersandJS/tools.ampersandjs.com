@@ -2,5 +2,8 @@ node_modules
 public/
 clientapp/modules
 clientapp/libraries
+clientapp/templates.js
 clientapp/.build
 clienttests/assets
+clienttests/spacemonkey
+resources.*.js
