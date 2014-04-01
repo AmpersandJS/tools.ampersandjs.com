@@ -1,11 +1,11 @@
-var HumanView = require('human-view');
+var View = require('ampersand-view');
 var templates = require('../templates');
 
 
-module.exports = HumanView.extend({
+module.exports = View.extend({
     template: templates.includes.repo,
-    classBindings: {
-        active: ''
+    bindings: {
+        active: ['', 'class']
     },
     events: {
         'click .tags a': 'handleTagClick'

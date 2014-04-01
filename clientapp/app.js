@@ -1,6 +1,5 @@
 /*global app, me, $*/
 var stats = require('loading-stats');
-var Backbone = require('backbone');
 var _ = require('underscore');
 var logger = require('andlog');
 var config = require('clientconfig');
@@ -61,13 +60,8 @@ module.exports = {
     renderPage: function (view, animation) {
         var container = $('#pages');
 
-        if (app.currentPage) {
-            app.currentPage.hide();
-            app.trigger('pageunloaded', app.currentPage);
-        }
-
         // we call show
-        container.append(view.show().el);
+        container.append(view.render().el);
     }
 };
 

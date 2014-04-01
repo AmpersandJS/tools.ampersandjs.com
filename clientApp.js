@@ -8,7 +8,7 @@ module.exports = function (app, config) {
         server: app,
         jsFileName: 'resources',
         cssFileName: 'resources',
-        developmentMode: config.isDev,
+        developmentMode: true,
         libraries: [
             __dirname + '/clientapp/libraries/zepto.js'
         ],
