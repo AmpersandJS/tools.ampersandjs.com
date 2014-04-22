@@ -376,5 +376,10 @@ module.exports = [
         description: 'Async utilities for node and the browser.',
         author: 'caolan',
         tags: ['utility', 'async']
+    },
+    {
+        id: 'window-watcher',
+        description: 'State object you can listen to for changes to window width.',
+        tags: ['events', 'window']
     }
 ];
