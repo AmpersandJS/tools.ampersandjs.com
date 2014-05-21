@@ -18,7 +18,7 @@ module.exports = [
     {
         id: 'getusermedia',
         description: 'Cross-browser getUserMedia shim with node.js style error-first API.',
-        tags: ['webrtc', 'media']
+        tags: ['video', 'webrtc', 'media']
     },
     {
         id: 'ampersand',
