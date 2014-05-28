@@ -186,7 +186,7 @@ module.exports = [
     },
     {
         id: 'templatizer',
-        description: "imple solution for compiling jade templates into vanilla JS functions for blazin' fast client-side use.",
+        description: "Simple solution for compiling jade templates into vanilla JS functions for blazin' fast client-side use.",
         tags: ['templates', 'jade']
     },
     {
