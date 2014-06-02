@@ -381,5 +381,18 @@ module.exports = [
         id: 'window-watcher',
         description: 'State object you can listen to for changes to window width.',
         tags: ['events', 'window']
+    },
+    {
+        id: 'milliseconds',
+        description: 'Insanely lightweight module for converting times to milliseconds.',
+        tags: ['time', 'milliseconds', 'utility']
+    },
+    {
+        id: 'ms',
+        description: 'Millisecond conversion utility, parses and serializes to string. i.e. "1h"',
+        author: 'rauchg',
+        githubUser: 'guille',
+        github: 'ms.js',
+        tags: ['time', 'milliseconds', 'utility']
     }
 ];
