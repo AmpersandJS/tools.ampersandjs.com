@@ -1,25 +1,75 @@
-// colors
+// Font families
 
-$header = #404040
-$bodybg = #202020
+$font-family-gotham-round = 'Gotham Rounded A', 'Gotham Rounded B', Helvetica, Arial, sans-serif
+$font-family-sentinel = 'Sentinel SSm A', 'Sentinel SSm B', Georgia, Times, serif
 
-$red = #c80000
-$text = #333
-$subtext = #777
+// Font sizes
 
-$pink = #EB008B
-$ltgray = #EBECEC
-$dkgray = #202020
-$blue = #00aeef
-$dkblue = #006991
+$font-size-large = 1.125em
+$font-size-copy = 1.1em
+$font-size-base = 1em
+$font-size-small = .95em
+$font-size-smaller = .85em
 
+$font-size-h1 = 1.6em
+$font-size-h2 = 1.4em
+$font-size-h3 = 1.2em
+$font-size-h4 = 1.1em
+$font-size-h5 = 1em
+$font-size-h6 = .875em
 
-// font sizes
+$line-height-base = 1.65
+$line-height-headings = 1.4
 
-$fontLG = 20px
-$fontMD = 16px
-$fontSM = 13px
+$font-weight-normal = 400
+$font-weight-semibold = 500
+$font-weight-bold = 800
 
+// Blues
+
+$blue-saturated-darker = #001620
+$blue-saturated-dark = #002531
+$blue-saturated = #003546
+$blue-saturated-light = #1f4753
+$blue-saturated-lighter = #438193
+
+$blue = #12acef
+$blue-light = lighten($blue, 50%)
+$blue-lighter = lighten($blue, 90%)
+
+// Monochromatic
+
+$gray-darker = #272b2d
+$gray-dark = #4d5659
+$gray = #828c8f
+$gray-light = #b7c0c3
+$gray-lighter = #e6eaed
+
+$border-color = #f7f7f7
+
+// Pinks
+
+$pink = #ec008c
+$pink-light = #fec1d1
+$pink-lighter = #ffedf2
+
+// Greens
+
+$green = #43bb6e
+$green-light = lighten($green, 70%)
+$green-lighter = #e8f7ef
+
+// Reds
+
+$red = #e80044
+$red-light = lighten($red, 80%)
+$red-lighter = lighten($red, 97%)
+
+// Orange
+
+$orange = #f18902
+$orange-light = lighten($orange, 50%)
+$orange-lighter = lighten($orange, 85%)
 
 // dimensions
 
@@ -28,3 +78,9 @@ $seven = 7  * $base
 $five = 5  * $base
 $three = 3  * $base
 $page = 38 * $base
+
+// logos
+
+$logo-ampersand = url(unquote("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIyMDEuMSAyNzQuMiAyMTYgMjUxLjciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMjAxLjEgMjc0LjIgMjE2IDI1MS43IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBmaWxsPSIjRUIzQjk1IiBkPSJNMzA2LjMsMzg1LjlsNDMuNiw1Mi43bDEuNS0xLjVjNC43LTUsOS4xLTEwLDEzLjMtMTVjNC4xLTUsMTUtMTYuNSwxOC45LTIxLjhsMTcuMSwzMS4yDQoJCQljLTIuOSw0LjEtNi44LDkuMS0xMS41LDE0LjdzLTEwLjMsMTIuMS0xNy4xLDE5LjJsNDUuMSw1NS43aC00NS43bC0yNC4yLTI5LjhjLTIyLjEsMjMtNDUuNCwzNC41LTY5LjIsMzQuNQ0KCQkJYy0yMS41LDAtMzkuOC02LjgtNTQuOC0yMC42Yy0xNC43LTEzLjgtMjIuMS0zMC45LTIyLjEtNTEuM2MwLTI0LjIsMTEuNS00NC41LDM1LjEtNjAuNGwxNS45LTEwLjljMC4zLDAsMC42LTAuMywxLjItMC45DQoJCQljMC42LTAuMywxLjItMC45LDIuMS0xLjhjLTE1LjktMTcuMS0yNC4yLTMzLjktMjQuMi01MC40czUuMy0yOS44LDE1LjktNDAuMWMxMC45LTEwLjMsMjUtMTUuMyw0Mi40LTE1LjNjMTYuOCwwLDMwLjQsNSw0MS4zLDE1DQoJCQlzMTYuNSwyMi43LDE2LjUsMzcuN2MwLDEwLjYtMi45LDIwLTguOCwyOC42QzMzMi4yLDM2My44LDMyMS42LDM3NC4xLDMwNi4zLDM4NS45eiBNMjc3LjEsNDA2LjVsLTIuMSwxLjUNCgkJCWMtMTUsMTAuMy0yNS4zLDE4LjktMzAuNiwyNXMtOCwxMy04LDIwYzAsMTAsNC4xLDE5LjQsMTIuMSwyNy43YzguMyw4LDE3LjcsMTIuMSwyNy43LDEyLjFjMTQuMSwwLDMwLjQtOS4xLDQ4LjktMjcuNw0KCQkJTDI3Ny4xLDQwNi41eiBNMjg1LjEsMzYwLjJsMi45LTIuNGM1LTMuOCw5LjQtNy40LDEyLjctMTBjMy4yLTIuOSw1LjktNS4zLDcuNC03LjRjMy4yLTMuOCw0LjctOC41LDQuNy0xNC40DQoJCQljMC02LjUtMi4xLTExLjUtNi41LTE1LjZzLTEwLTUuOS0xNy40LTUuOWMtNi41LDAtMTIuMSwyLjEtMTYuOCw2LjJjLTQuNCwzLjgtNi44LDguOC02LjgsMTVjMCw3LjEsMi45LDE0LjEsOC41LDIxLjJsOS4xLDEwLjkNCgkJCUMyODMuMywzNTguMiwyODMuOSwzNTksMjg1LjEsMzYwLjJ6Ii8+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo="))
+
+$logo-ampersand-gray = url(unquote("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIxNjIgMjQ2LjEgMjg4IDMzNS42IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDE2MiAyNDYuMSAyODggMzM1LjYiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGZpbGw9IiNCN0MwQzMiIGQ9Ik0zMDIuMSwzOTUuMmw1OC4xLDcwLjNsMi0yYzYuMy02LjcsMTIuMS0xMy4zLDE3LjctMjBjNS41LTYuNywyMC0yMiwyNS4yLTI5LjFMNDI4LDQ1Ng0KCQkJYy0zLjksNS41LTkuMSwxMi4xLTE1LjMsMTkuNmMtNi4zLDcuNS0xMy43LDE2LjEtMjIuOCwyNS42bDYwLjEsNzQuM2gtNjAuOWwtMzIuMy0zOS43Yy0yOS41LDMwLjctNjAuNSw0Ni05Mi4zLDQ2DQoJCQljLTI4LjcsMC01My4xLTkuMS03My4xLTI3LjVjLTE5LjYtMTguNC0yOS41LTQxLjItMjkuNS02OC40YzAtMzIuMywxNS4zLTU5LjMsNDYuOC04MC41bDIxLjItMTQuNWMwLjQsMCwwLjgtMC40LDEuNi0xLjINCgkJCWMwLjgtMC40LDEuNi0xLjIsMi44LTIuNGMtMjEuMi0yMi44LTMyLjMtNDUuMi0zMi4zLTY3LjJzNy4xLTM5LjcsMjEuMi01My41YzE0LjUtMTMuNywzMy4zLTIwLjQsNTYuNS0yMC40DQoJCQljMjIuNCwwLDQwLjUsNi43LDU1LjEsMjBjMTQuNSwxMy4zLDIyLDMwLjMsMjIsNTAuM2MwLDE0LjEtMy45LDI2LjctMTEuNywzOC4xQzMzNi43LDM2NS43LDMyMi41LDM3OS41LDMwMi4xLDM5NS4yeg0KCQkJIE0yNjMuMiw0MjIuN2wtMi44LDJjLTIwLDEzLjctMzMuNywyNS4yLTQwLjgsMzMuM2MtNy4xLDguMS0xMC43LDE3LjMtMTAuNywyNi43YzAsMTMuMyw1LjUsMjUuOSwxNi4xLDM2LjkNCgkJCWMxMS4xLDEwLjcsMjMuNiwxNi4xLDM2LjksMTYuMWMxOC44LDAsNDAuNS0xMi4xLDY1LjItMzYuOUwyNjMuMiw0MjIuN3ogTTI3My45LDM2MC45bDMuOS0zLjJjNi43LTUuMSwxMi41LTkuOSwxNi45LTEzLjMNCgkJCWM0LjMtMy45LDcuOS03LjEsOS45LTkuOWM0LjMtNS4xLDYuMy0xMS4zLDYuMy0xOS4yYzAtOC43LTIuOC0xNS4zLTguNy0yMC44cy0xMy4zLTcuOS0yMy4yLTcuOWMtOC43LDAtMTYuMSwyLjgtMjIuNCw4LjMNCgkJCWMtNS45LDUuMS05LjEsMTEuNy05LjEsMjBjMCw5LjUsMy45LDE4LjgsMTEuMywyOC4zbDEyLjEsMTQuNUMyNzEuNSwzNTguMywyNzIuMywzNTkuMywyNzMuOSwzNjAuOXoiLz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg=="))
