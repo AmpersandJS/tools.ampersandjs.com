@@ -58,7 +58,7 @@ exports.pages.info = function anonymous(locals) {
 exports.pages.repos = function anonymous(locals) {
     var buf = [];
     with (locals || {}) {
-        buf.push('<section class="page repos"><h4>Use the search box to filter</h4><div class="form-group"><input id="search" autofocus="autofocus" placeholder="quick filter" class="form-control"/></div><div class="repoList row"></div></section>');
+        buf.push('<section class="page repos"><h4>Use the search box to filter</h4><div class="form-group cf"><input id="search" autofocus="autofocus" placeholder="quick filter" class="form-control"/><a href="https://github.com/AmpersandJS/tools.ampersandjs.com/issues/new" class="suggest">Suggest a module</a></div><div class="repoList row"></div></section>');
     }
     return buf.join("");
 };

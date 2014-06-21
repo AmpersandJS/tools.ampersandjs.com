@@ -144,8 +144,13 @@ a:hover {
   margin-top: 15px;
   font-size: 1em;
 }
+.form-group .suggest {
+  margin-top: 10px;
+  float: right;
+  font-size: 0.95em;
+}
 .repoList {
-  padding: 30px 15px;
+  padding: 25px 15px;
 }
 .repo {
   display: none;
