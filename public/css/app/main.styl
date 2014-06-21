@@ -144,21 +144,19 @@ a
     font-size: $font-size-small
 
 .repoList
-  padding: 25px 15px
+  padding: 25px 0
 
 .repo
   display: none
   float: left
-  width: 32%
+  width: 31.333%
   height: 275px
-  margin-right: 2%
+  margin: 1%
   position: relative
   overflow: hidden
   border: 1px dotted $gray-lighter
   background: white
   box-shadow: none
-  &:nth-child(3n)
-    margin-right: 0
 
   h3
     margin-top: 0
@@ -182,18 +180,15 @@ a
 
 @media (max-width: 925px)
   .repo
-    width: 49%
-    &:nth-child(3n)
-      margin-right: 2%
-    &:nth-child(2n)
-      margin-right: 0
+    width: 48%
 
 @media (max-width: 680px)
+  .repoList
+    padding: 25px 15px
+
   .repo
     width: 100%
-    margin-right: 0
-    &:nth-child(3n)
-      margin-right: 0
+    margin: 10px 0
 
 // Footer
 

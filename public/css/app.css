@@ -150,22 +150,19 @@ a:hover {
   font-size: 0.95em;
 }
 .repoList {
-  padding: 25px 15px;
+  padding: 25px 0;
 }
 .repo {
   display: none;
   float: left;
-  width: 32%;
+  width: 31.333%;
   height: 275px;
-  margin-right: 2%;
+  margin: 1%;
   position: relative;
   overflow: hidden;
   border: 1px dotted #e6eaed;
   background: #fff;
   box-shadow: none;
-}
-.repo:nth-child(3n) {
-  margin-right: 0;
 }
 .repo h3 {
   margin-top: 0;
@@ -189,22 +186,16 @@ a:hover {
 }
 @media (max-width: 925px) {
   .repo {
-    width: 49%;
-  }
-  .repo:nth-child(3n) {
-    margin-right: 2%;
-  }
-  .repo:nth-child(2n) {
-    margin-right: 0;
+    width: 48%;
   }
 }
 @media (max-width: 680px) {
+  .repoList {
+    padding: 25px 15px;
+  }
   .repo {
     width: 100%;
-    margin-right: 0;
-  }
-  .repo:nth-child(3n) {
-    margin-right: 0;
+    margin: 10px 0;
   }
 }
 .footer-main {
