@@ -30,12 +30,16 @@ exports.head = function anonymous(locals) {
 exports.includes.repo = function anonymous(locals) {
     var buf = [];
     with (locals || {}) {
-        buf.push('<div class="repo well"><h3>' + jade.escape((jade.interp = repo.id) == null ? "" : jade.interp) + ' <small><span>by: <a href="' + jade.escape((jade.interp = repo.npmUserUrl) == null ? "" : jade.interp) + '">' + jade.escape((jade.interp = repo.author) == null ? "" : jade.interp) + "</a></span> | <a" + jade.attrs({
-            href: repo.githubUrl,
-            "class": "github"
-        }, {
-            href: true
-        }) + ">github</a> | <a" + jade.attrs({
+        buf.push('<div class="repo well"><h3>' + jade.escape((jade.interp = repo.id) == null ? "" : jade.interp) + ' <small><span>by: <a href="' + jade.escape((jade.interp = repo.npmUserUrl) == null ? "" : jade.interp) + '">' + jade.escape((jade.interp = repo.author) == null ? "" : jade.interp) + "</a></span> | ");
+        if (repo.homepage) {
+            buf.push("<a" + jade.attrs({
+                href: repo.homepage,
+                "class": "github"
+            }, {
+                href: true
+            }) + ">github</a> | ");
+        }
+        buf.push("<a" + jade.attrs({
             href: repo.npmUrl,
             "class": "npm"
         }, {

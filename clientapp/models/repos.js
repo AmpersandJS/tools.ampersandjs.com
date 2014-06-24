@@ -1,6 +1,6 @@
 var BaseCollection = require('./baseCollection');
 var Repo = require('./repo');
-var data = require('../fixtures/repos');
+var data = require('../fixtures/repos.json');
 
 
 module.exports = BaseCollection.extend({

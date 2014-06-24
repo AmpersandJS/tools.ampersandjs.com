@@ -3,8 +3,9 @@
     small
       span by: <a href="#{repo.npmUserUrl}">#{repo.author}</a>
       |  | 
-      a.github(href= repo.githubUrl) github
-      |  | 
+      if (repo.homepage)
+        a.github(href= repo.homepage) github
+        |  | 
       a.npm(href= repo.npmUrl) npm
        
   p.description= repo.description

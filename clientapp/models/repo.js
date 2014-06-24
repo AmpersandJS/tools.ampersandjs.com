@@ -6,12 +6,10 @@ module.exports = Model.extend({
     props: {
         // npm slug
         id: ['string', true],
-        repoType: ['string', true, 'client'],
         description: ['string', true],
         tags: ['array', true],
-        author: ['string', true, 'HenrikJoreteg'],
-        github: 'string',
-        githubUser: 'string'
+        author: ['string', true, ''],
+        homepage: ['string', true, '']
     },
     derived: {
         tagLinks: {
@@ -24,25 +22,13 @@ module.exports = Model.extend({
         searchString: {
             cache: true,
             fn: function () {
-                return [this.id, this.description, this.author, this.github].concat(this.tags).join(' ').toLowerCase();
+                return [this.id, this.description, this.author, this.homepage].concat(this.tags).join(' ').toLowerCase();
             }
         },
         npmUrl: {
             cache: true,
             fn: function () {
                 return 'http://npmjs.org/package/' + this.id;
-            }
-        },
-        githubUrl: {
-            cache: true,
-            fn: function () {
-                return this.githubUserUrl + '/' + (this.github || this.id);
-            }
-        },
-        githubUserUrl: {
-            cache: true,
-            fn: function () {
-                return 'https://github.com/' + (this.githubUser || this.author);
             }
         },
         npmUserUrl: {

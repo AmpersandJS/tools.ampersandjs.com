@@ -1,7 +1,6 @@
 /*global console*/
 var clientApp = require('./clientApp');
 var fs = require('fs');
-
 var client = clientApp(null, {developmentMode: false, resourcePrefix: ''});
 var files = fs.readdirSync(__dirname);
 
