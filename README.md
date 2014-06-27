@@ -6,7 +6,7 @@ If you need something that ampersand doesn't do, odds are good that there's some
 
 ## for more info
 
-Check out http://humanjavscript.com and follow [@HenrikJoreteg](http://twitter.com/henrikjoreteg) on twitter.
+Check out http://humanjavascript.com and follow [@HenrikJoreteg](http://twitter.com/henrikjoreteg) on twitter.
 
 ## caveats
 
