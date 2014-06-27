@@ -55,6 +55,7 @@
     "ampersand-model",
     "ampersand-registry",
     "ampersand-rest-collection",
+    "ampersand-router",
     "ampersand-select-view",
     "ampersand-state",
     "ampersand-sync",
