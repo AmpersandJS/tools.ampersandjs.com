@@ -9,7 +9,7 @@
   "dependencies": {
     "ampersand-collection": "~0.2.2",
     "ampersand-collection-underscore-mixin": "~0.1.0",
-    "ampersand-model": "~2.7.1",
+    "ampersand-model": "~3.0.4",
     "ampersand-router": "~0.1.0",
     "ampersand-view": "~2.0.2",
     "andlog": "0.0.4",
