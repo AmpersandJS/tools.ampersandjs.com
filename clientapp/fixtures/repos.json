@@ -833,5 +833,15 @@
       "browser"
     ],
     "description": "A super lightweight EventEmitter similar to what comes in Node.js, but with a support for wildcard events '*' and grouped handlers"
+  },
+  {
+    "id": "ampersand-dependency-mixin",
+    "author": "wookiehangover",
+    "tags": [
+      "dependencies",
+      "view",
+      "mixin"
+    ],
+    "description": "A mixin for managing dependencies that are passed to a constructor as options. It will automatically attach specified keys in the options object, throwing errors if they're not present."
   }
 ]
