@@ -1,4 +1,4 @@
-/*global app, me, $*/
+/*global app, me*/
 var Router = require('ampersand-router');
 var ReposPage = require('./pages/repos');
 

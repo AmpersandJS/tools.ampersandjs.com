@@ -1,10 +1,11 @@
-/*global app, me, $*/
+/*global app, me*/
 // This app view is responsible for rendering all content that goes into
 // <html>. It's initted right away and renders iteslf on DOM ready.
 
 // This view also handles all the 'document' level events such as keyboard shortcuts.
 var View = require('ampersand-view');
 var _ = require('underscore');
+var domify = require('domify');
 var templates = require('../templates');
 //var key = require('keymaster');
 var tracking = require('../helpers/metrics');
@@ -18,42 +19,12 @@ module.exports = View.extend({
     },
     render: function () {
         // some additional stuff we want to add to the document head
-        $('head').append(templates.head());
+        document.head.appendChild(domify(templates.head()));
         // main renderer
-        this.renderAndBind({me: me});
+        this.renderWithTemplate({me: me});
         // setting a favicon for fun (note, it's dyanamic)
         setFavicon('/images/ampersand.png');
         //this.createGlobalNavShortcuts();
         return this;
-    },
-
-    handleLinkClick: function (e) {
-        var t = $(e.target),
-            aEl = t.is('a') ? t[0] : t.closest('a')[0],
-            local = window.location.host === aEl.host,
-            path = aEl.pathname.slice(1);
-
-
-        if (local) {
-            app.navigate(path);
-            return false;
-        } else if (window.navigator.standalone) {
-            // open external in a new window if iOS installed
-            window.open(aEl.href);
-        }
-    },
-
-    updateActiveNav: function () {
-        var pathname = window.location.pathname;
-        $('.nav a').each(function () {
-            var navArray = _.compact($(this).attr('href').split('/')).join('/').toLowerCase(),
-                pathArray = _.compact(pathname.split('/')).join('/').toLowerCase();
-
-            if (pathArray === navArray) {
-                $(this).parent().addClass('active');
-            } else {
-                $(this).parent().removeClass('active');
-            }
-        });
     }
 });

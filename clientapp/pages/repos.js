@@ -9,9 +9,9 @@ module.exports = View.extend({
         'keyup #search': 'handleSearchKeyUp'
     },
     render: function () {
-        this.renderAndBind();
-        this.renderCollection(this.collection, RepoView, this.get('.repoList'));
-        this.searchEl = this.get('#search');
+        this.renderWithTemplate();
+        this.renderCollection(this.collection, RepoView, this.query('.repoList'));
+        this.searchEl = this.query('#search');
         this.listenToAndRun(me, 'change:query', this.handleQueryChange);
         return this;
     },

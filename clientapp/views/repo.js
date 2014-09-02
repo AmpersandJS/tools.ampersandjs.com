@@ -5,16 +5,18 @@ var templates = require('../templates');
 module.exports = View.extend({
     template: templates.includes.repo,
     bindings: {
-        active: ['', 'class']
+        'model.active': {
+            type: 'booleanClass'
+        }
     },
     events: {
         'click .tags a': 'handleTagClick'
     },
     render: function () {
-        this.renderAndBind({repo: this.model});
+        this.renderWithTemplate({repo: this.model});
     },
     handleTagClick: function (e) {
-        me.query = $(e.target).text();
+        me.query = e.target.textContent;
         return false;
     }
 });

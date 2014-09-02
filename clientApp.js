@@ -10,7 +10,7 @@ module.exports = function (app, config) {
         cssFileName: 'resources',
         developmentMode: true,
         libraries: [
-            __dirname + '/clientapp/libraries/zepto.js'
+        //    __dirname + '/clientapp/libraries/zepto.js'
         ],
         stylesheets: [
             __dirname + '/public/css/bootstrap.min.css',

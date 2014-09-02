@@ -1,4 +1,4 @@
-/*global app, me, $*/
+/*global app, me*/
 var stats = require('loading-stats');
 var _ = require('underscore');
 var logger = require('andlog');
@@ -10,6 +10,8 @@ var MainView = require('./views/main');
 var Me = require('./models/me');
 var Repos = require('./models/repos');
 var queryParam = require('query-param-getter');
+var domready = require('domready');
+
 
 module.exports = {
     // this is the the whole app initter
@@ -29,7 +31,7 @@ module.exports = {
 
         // wait for document ready to render our main view
         // this ensures the document has a body, etc.
-        $(function () {
+        domready(function () {
             // init our main view
             self.view = new MainView({
                 model: me,
@@ -58,10 +60,10 @@ module.exports = {
     // It simply matches urls to figure out which item should
     // be 'active'.
     renderPage: function (view, animation) {
-        var container = $('#pages');
+        var container = document.getElementById('pages');
 
         // we call show
-        container.append(view.render().el);
+        container.appendChild(view.render().el);
     }
 };
 

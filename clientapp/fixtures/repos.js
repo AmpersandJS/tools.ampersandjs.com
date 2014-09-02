@@ -394,5 +394,12 @@ module.exports = [
         githubUser: 'guille',
         github: 'ms.js',
         tags: ['time', 'milliseconds', 'utility']
+    },
+    {
+        id: 'domify',
+        author: 'tjholowaychuk',
+        githubUser: 'component',
+        github: 'domify',
+        tags: ['dom', 'util']
     }
 ];
