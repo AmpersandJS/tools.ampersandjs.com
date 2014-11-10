@@ -1,5 +1,12 @@
 [
   {
+    "id": "ampersand-avatar-input-view",
+    "author": "latentflip",
+    "description": "",
+    "homepage": "https://github.com/latentflip/ampersand-avatar-field",
+    "license": "ISC"
+  },
+  {
     "id": "add-keyup-events",
     "author": "henrikjoreteg",
     "tags": [
@@ -21,37 +28,6 @@
     ],
     "description": "A view module for intelligently rendering and validating checkbox input. Works well with ampersand-form-view.",
     "homepage": "https://github.com/ampersandjs/ampersand-checkbox-view",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-avatar-input-view",
-    "author": "latentflip",
-    "description": "",
-    "homepage": "https://github.com/latentflip/ampersand-avatar-field",
-    "license": "ISC"
-  },
-  {
-    "id": "ampersand-array-input-view",
-    "author": "henrikjoreteg",
-    "tags": [
-      "forms",
-      "ampersand",
-      "browser"
-    ],
-    "description": "A view module for intelligently rendering and validating inputs that should produce an array of values. Works well with ampersand-form-view.",
-    "homepage": "https://github.com/ampersandjs/ampersand-array-input-view",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-class-extend",
-    "author": "henrikjoreteg",
-    "tags": [
-      "ampersand",
-      "inheritance",
-      "class"
-    ],
-    "description": "JS class extension tool for enabling easily extending prototype with multiple objects.",
-    "homepage": "https://github.com/ampersandjs/ampersand-class-extend",
     "license": "MIT"
   },
   {
@@ -79,22 +55,28 @@
     "license": "MIT"
   },
   {
-    "id": "ampersand-form-view",
+    "id": "ampersand-class-extend",
+    "author": "henrikjoreteg",
+    "tags": [
+      "ampersand",
+      "inheritance",
+      "class"
+    ],
+    "description": "JS class extension tool for enabling easily extending prototype with multiple objects.",
+    "homepage": "https://github.com/ampersandjs/ampersand-class-extend",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand-array-input-view",
     "author": "henrikjoreteg",
     "tags": [
       "forms",
       "ampersand",
       "browser"
     ],
-    "description": "Completely customizable form lib for bulletproof clientside forms.",
-    "homepage": "https://github.com/ampersandjs/ampersand-form-view",
+    "description": "A view module for intelligently rendering and validating inputs that should produce an array of values. Works well with ampersand-form-view.",
+    "homepage": "https://github.com/ampersandjs/ampersand-array-input-view",
     "license": "MIT"
-  },
-  {
-    "id": "ampersand-domthing-mixin",
-    "author": "latentflip",
-    "description": "A mixin for AmpersandView that makes data binding between your models and domthing templates happen automatically.",
-    "license": "ISC"
   },
   {
     "id": "ampersand-input-view",
@@ -109,37 +91,26 @@
     "license": "MIT"
   },
   {
-    "id": "ampersand-collection",
+    "id": "ampersand-dom",
     "author": "henrikjoreteg",
     "tags": [
-      "collection",
-      "client",
-      "mvc"
+      "dom",
+      "binding"
     ],
-    "description": "A way to store/manage objects or models.",
-    "homepage": "https://github.com/ampersandjs/ampersand-collection",
+    "description": "Super light-weight DOM manipulation lib.",
+    "homepage": "https://github.com/ampersandjs/ampersand-dom",
     "license": "MIT"
   },
   {
-    "id": "ampersand-model",
+    "id": "ampersand-form-view",
     "author": "henrikjoreteg",
     "tags": [
-      "model, ampersand, state"
+      "forms",
+      "ampersand",
+      "browser"
     ],
-    "description": "An extension to ampersand-state that adds methods and properties for working with a RESTful API.",
-    "homepage": "https://github.com/ampersandjs/ampersand-model",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-rest-collection",
-    "author": "henrikjoreteg",
-    "tags": [
-      "collection",
-      "rest",
-      "models"
-    ],
-    "description": "ampersand-collection with REST and Underscore mixins.",
-    "homepage": "https://github.com/ampersandjs/ampersand-rest-collection",
+    "description": "Completely customizable form lib for bulletproof clientside forms.",
+    "homepage": "https://github.com/ampersandjs/ampersand-form-view",
     "license": "MIT"
   },
   {
@@ -154,16 +125,33 @@
     "license": "MIT"
   },
   {
-    "id": "ampersand-sync",
+    "id": "ampersand-domthing-mixin",
+    "author": "latentflip",
+    "description": "A mixin for AmpersandView that makes data binding between your models and domthing templates happen automatically.",
+    "license": "ISC"
+  },
+  {
+    "id": "ampersand-router",
     "author": "henrikjoreteg",
     "tags": [
-      "backbone",
-      "sync",
-      "rest",
-      "ampersand"
+      "clientside",
+      "router",
+      "history"
     ],
-    "description": "Standalone, modern-browser-only version of Backbone.Sync as Common JS module.",
-    "homepage": "https://github.com/ampersandjs/ampersand-sync",
+    "description": "Clientside router with fallbacks for browsers that don't support pushState. Mostly lifted from Backbone.js.",
+    "homepage": "https://github.com/ampersandjs/ampersand-router",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand-collection",
+    "author": "henrikjoreteg",
+    "tags": [
+      "collection",
+      "client",
+      "mvc"
+    ],
+    "description": "A way to store/manage objects or models.",
+    "homepage": "https://github.com/ampersandjs/ampersand-collection",
     "license": "MIT"
   },
   {
@@ -180,27 +168,26 @@
     "license": "MIT"
   },
   {
-    "id": "ampersand-router",
+    "id": "ampersand-sync",
     "author": "henrikjoreteg",
     "tags": [
-      "clientside",
-      "router",
-      "history"
+      "backbone",
+      "sync",
+      "rest",
+      "ampersand"
     ],
-    "description": "Clientside router with fallbacks for browsers that don't support pushState. Mostly lifted from Backbone.js.",
-    "homepage": "https://github.com/ampersandjs/ampersand-router",
+    "description": "Provides sync behavior for updating data from ampersand models and collections to the server.",
+    "homepage": "https://github.com/ampersandjs/ampersand-sync",
     "license": "MIT"
   },
   {
-    "id": "ampersand-state",
+    "id": "ampersand-model",
     "author": "henrikjoreteg",
     "tags": [
-      "model",
-      "object",
-      "observable"
+      "model, ampersand, state"
     ],
-    "description": "An observable, extensible state object with derived watchable properties.",
-    "homepage": "https://github.com/ampersandjs/ampersand-state",
+    "description": "An extension to ampersand-state that adds methods and properties for working with a RESTful API.",
+    "homepage": "https://github.com/ampersandjs/ampersand-model",
     "license": "MIT"
   },
   {
@@ -217,14 +204,21 @@
     "license": "MIT"
   },
   {
-    "id": "array-next",
+    "id": "andlog",
+    "author": "henrikjoreteg",
+    "description": "Super-simple, client-side CommonJS logging thingy",
+    "homepage": "https://github.com/HenrikJoreteg/andlog"
+  },
+  {
+    "id": "ampersand-rest-collection",
     "author": "henrikjoreteg",
     "tags": [
-      "util",
-      "array",
-      "index"
+      "collection",
+      "rest",
+      "models"
     ],
-    "description": "Advance to the next item in the array looping when hitting the end.",
+    "description": "ampersand-collection with REST and Underscore mixins.",
+    "homepage": "https://github.com/ampersandjs/ampersand-rest-collection",
     "license": "MIT"
   },
   {
@@ -236,6 +230,29 @@
       "index"
     ],
     "description": "Jump forward or backward through an array by an index based on an item already in the array.",
+    "license": "MIT"
+  },
+  {
+    "id": "array-next",
+    "author": "henrikjoreteg",
+    "tags": [
+      "util",
+      "array",
+      "index"
+    ],
+    "description": "Advance to the next item in the array looping when hitting the end.",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand-state",
+    "author": "henrikjoreteg",
+    "tags": [
+      "model",
+      "object",
+      "observable"
+    ],
+    "description": "An observable, extensible state object with derived watchable properties.",
+    "homepage": "https://github.com/ampersandjs/ampersand-state",
     "license": "MIT"
   },
   {
@@ -252,23 +269,37 @@
     "license": "MIT"
   },
   {
-    "id": "andlog",
-    "author": "henrikjoreteg",
-    "description": "Super-simple, client-side CommonJS logging thingy",
-    "homepage": "https://github.com/HenrikJoreteg/andlog"
-  },
-  {
-    "id": "ampersand-view",
+    "id": "bind-transforms",
     "author": "henrikjoreteg",
     "tags": [
+      "humanjs",
       "backbone",
-      "view",
-      "browser",
-      "browserify"
+      "views",
+      "binding",
+      "transforms"
     ],
-    "description": "A smart base view for Backbone apps, to make it easy to bind collections and properties to the DOM.",
-    "homepage": "https://github.com/ampersandjs/ampersand-view",
+    "description": "Bind models properties to properly prefixed CSS transforms in backbone/humanjs views.",
+    "homepage": "https://github.com/HenrikJoreteg/bind-transforms",
     "license": "MIT"
+  },
+  {
+    "id": "bows",
+    "author": "latentflip",
+    "tags": [
+      "color",
+      "logging",
+      "chrome",
+      "console"
+    ],
+    "description": "Rainbowed console logs for chrome, opera and firefox in development.",
+    "homepage": "https://github.com/latentflip/bows",
+    "license": "MIT"
+  },
+  {
+    "id": "clientconfig",
+    "author": "henrikjoreteg",
+    "description": "Simple way to pass config items from server to client",
+    "homepage": "https://github.com/henrikjoreteg/clientconfig"
   },
   {
     "id": "async",
@@ -289,31 +320,9 @@
     "license": "MIT"
   },
   {
-    "id": "bows",
-    "author": "latentflip",
-    "tags": [
-      "color",
-      "logging",
-      "chrome",
-      "console"
-    ],
-    "description": "Rainbowed console logs for chrome, opera and firefox in development.",
-    "homepage": "https://github.com/latentflip/bows",
-    "license": "MIT"
-  },
-  {
-    "id": "bind-transforms",
+    "id": "cookie-getter",
     "author": "henrikjoreteg",
-    "tags": [
-      "humanjs",
-      "backbone",
-      "views",
-      "binding",
-      "transforms"
-    ],
-    "description": "Bind models properties to properly prefixed CSS transforms in backbone/humanjs views.",
-    "homepage": "https://github.com/HenrikJoreteg/bind-transforms",
-    "license": "MIT"
+    "description": "Super light, high performance clientside cookie reader. Common JS and clientmodules compatible."
   },
   {
     "id": "domify",
@@ -329,6 +338,12 @@
     "homepage": "https://github.com/component/domify"
   },
   {
+    "id": "domthingify",
+    "author": "latentflip",
+    "description": "Browserify transform for [domthing](http://github.com/latentflip/domthing).",
+    "license": "MIT"
+  },
+  {
     "id": "domready",
     "author": "ded",
     "tags": [
@@ -340,28 +355,11 @@
     "homepage": "https://github.com/ded/domready"
   },
   {
-    "id": "clientconfig",
-    "author": "henrikjoreteg",
-    "description": "Simple way to pass config items from server to client",
-    "homepage": "https://github.com/henrikjoreteg/clientconfig"
-  },
-  {
-    "id": "cookie-getter",
-    "author": "henrikjoreteg",
-    "description": "Super light, high performance clientside cookie reader. Common JS and clientmodules compatible."
-  },
-  {
     "id": "domthing",
     "author": "latentflip",
     "description": "A simple, fast & safe, mustache/handlebars like templating engine with data-binding hooks built in.",
     "homepage": "https://github.com/latentflip/domthing",
     "license": "ISC"
-  },
-  {
-    "id": "domthingify",
-    "author": "latentflip",
-    "description": "Browserify transform for [domthing](http://github.com/latentflip/domthing).",
-    "license": "MIT"
   },
   {
     "id": "dummy-api",
@@ -375,6 +373,24 @@
     "license": "MIT"
   },
   {
+    "id": "emoji-images",
+    "author": "henrikjoreteg",
+    "description": "Replace stuff like :smiley: in text with <img> tags of a corresponding image."
+  },
+  {
+    "id": "ampersand-view",
+    "author": "henrikjoreteg",
+    "tags": [
+      "backbone",
+      "view",
+      "browser",
+      "browserify"
+    ],
+    "description": "A smart base view for Backbone apps, to make it easy to bind collections and properties to the DOM.",
+    "homepage": "https://github.com/ampersandjs/ampersand-view",
+    "license": "MIT"
+  },
+  {
     "id": "event-component",
     "author": "tjholowaychuk",
     "tags": [
@@ -382,6 +398,16 @@
       "events"
     ],
     "description": "Event binding component"
+  },
+  {
+    "id": "favicon-setter",
+    "author": "henrikjoreteg",
+    "tags": [
+      "favicon",
+      "browser",
+      "browserify"
+    ],
+    "description": "Super-simple tool for dynamically setting the favicon image on a page."
   },
   {
     "id": "extend-object",
@@ -396,21 +422,6 @@
     "license": "MIT"
   },
   {
-    "id": "favicon-setter",
-    "author": "henrikjoreteg",
-    "tags": [
-      "favicon",
-      "browser",
-      "browserify"
-    ],
-    "description": "Super-simple tool for dynamically setting the favicon image on a page."
-  },
-  {
-    "id": "emoji-images",
-    "author": "henrikjoreteg",
-    "description": "Replace stuff like :smiley: in text with <img> tags of a corresponding image."
-  },
-  {
     "id": "get-result",
     "author": "henrikjoreteg",
     "tags": [
@@ -421,6 +432,41 @@
     "description": "Utility function for getting a named property from an object. If the named property is a function invoke it with the object as context and return the result, otherwise return the property.",
     "homepage": "https://github.com/henrikjoreteg/get-result",
     "license": "MIT"
+  },
+  {
+    "id": "fastclick",
+    "author": "ftlabs",
+    "tags": [
+      "fastclick",
+      "mobile",
+      "touch",
+      "tap",
+      "click",
+      "delay"
+    ],
+    "description": "Polyfill to remove click delays on browsers with touch UIs.",
+    "homepage": "https://github.com/ftlabs/fastclick",
+    "license": "MIT"
+  },
+  {
+    "id": "hidden",
+    "author": "raynos",
+    "tags": [],
+    "description": "Cross browser Element#hidden",
+    "homepage": "https://github.com/Colingo/hidden",
+    "license": "MIT"
+  },
+  {
+    "id": "hark",
+    "author": "latentflip",
+    "description": "Converts an audio stream to speech events in the browser",
+    "homepage": "https://github.com/latentflip/hark",
+    "license": "MIT"
+  },
+  {
+    "id": "image-to-data-uri",
+    "author": "henrikjoreteg",
+    "description": "Clientside module (compatible with clientmodules) that takes an image url, downloads the image and creates a data URI for caching, etc."
   },
   {
     "id": "getusermedia",
@@ -446,31 +492,19 @@
     "license": "MIT"
   },
   {
-    "id": "hark",
-    "author": "latentflip",
-    "description": "Converts an audio stream to speech events in the browser",
-    "homepage": "https://github.com/latentflip/hark",
-    "license": "MIT"
-  },
-  {
-    "id": "image-to-data-uri",
-    "author": "henrikjoreteg",
-    "description": "Clientside module (compatible with clientmodules) that takes an image url, downloads the image and creates a data URI for caching, etc."
-  },
-  {
-    "id": "fastclick",
-    "author": "ftlabs",
+    "id": "img",
+    "author": "azer",
     "tags": [
-      "fastclick",
-      "mobile",
-      "touch",
-      "tap",
-      "click",
-      "delay"
+      "img",
+      "dom",
+      "browser",
+      "browserify",
+      "image",
+      "picture"
     ],
-    "description": "Polyfill to remove click delays on browsers with touch UIs.",
-    "homepage": "https://github.com/ftlabs/fastclick",
-    "license": "MIT"
+    "description": "Create IMG element",
+    "homepage": "https://github.com/npm-dom/img",
+    "license": "BSD"
   },
   {
     "id": "jingle-rtcpeerconnection",
@@ -485,6 +519,20 @@
     "license": "MIT"
   },
   {
+    "id": "is-dom",
+    "author": "yoshuawuyts",
+    "tags": [
+      "dom",
+      "html",
+      "is dom",
+      "dom node",
+      "dom object"
+    ],
+    "description": "Check if the given object is a dom node",
+    "homepage": "https://github.com/npm-dom/is-dom",
+    "license": "MIT"
+  },
+  {
     "id": "key-tree-store",
     "author": "henrikjoreteg",
     "tags": [
@@ -495,11 +543,6 @@
     "description": "Simple tool for storing/retrieving objects events based hierarchical keypaths.",
     "homepage": "https://github.com/HenrikJoreteg/key-tree-store",
     "license": "MIT"
-  },
-  {
-    "id": "loading-stats",
-    "author": "henrikjoreteg",
-    "description": "For tracking web app loading performance for single page apps."
   },
   {
     "id": "mediastream-gain",
@@ -528,31 +571,6 @@
     "license": "MIT"
   },
   {
-    "id": "jxt",
-    "author": "lancestout",
-    "tags": [
-      "JXT",
-      "JSON",
-      "XML",
-      "translation",
-      "stanza.io"
-    ],
-    "description": "JSON/XML Translator. Set/retrieve data from XML just like working with a dictionary.",
-    "homepage": "https://github.com/otalk/jxt",
-    "license": "MIT"
-  },
-  {
-    "id": "mockconsole",
-    "author": "henrikjoreteg",
-    "tags": [
-      "browser",
-      "console",
-      "logging"
-    ],
-    "description": "An object with all the same methods as console in the browser. But does nothing.",
-    "license": "MIT"
-  },
-  {
     "id": "jingle",
     "author": "lancestout",
     "tags": [
@@ -565,36 +583,20 @@
     "license": "MIT"
   },
   {
-    "id": "moonboots_hapi",
-    "author": "gar",
-    "description": "Moonboots plugin that allows it to serve files using a hapi server",
-    "homepage": "https://github.com/wraithgar/moonboots_hapi",
-    "license": "MIT"
+    "id": "loading-stats",
+    "author": "henrikjoreteg",
+    "description": "For tracking web app loading performance for single page apps."
   },
   {
-    "id": "moonboots",
+    "id": "mockconsole",
     "author": "henrikjoreteg",
     "tags": [
-      "commonjs",
-      "clientside",
-      "browserify",
-      "singlepage"
+      "browser",
+      "console",
+      "logging"
     ],
-    "description": "A set of tools and conventions for building/serving clientside apps with node.js",
-    "homepage": "https://github.com/henrikjoreteg/moonboots",
+    "description": "An object with all the same methods as console in the browser. But does nothing.",
     "license": "MIT"
-  },
-  {
-    "id": "pikaday",
-    "author": "rikkert",
-    "tags": [
-      "datepicker",
-      "calendar",
-      "date"
-    ],
-    "description": "A refreshing JavaScript Datepicker — lightweight, no dependencies, modular CSS",
-    "homepage": "http://dbushell.github.io/Pikaday/",
-    "license": "BSD"
   },
   {
     "id": "moment",
@@ -615,6 +617,45 @@
     "license": "MIT"
   },
   {
+    "id": "jxt",
+    "author": "lancestout",
+    "tags": [
+      "JXT",
+      "JSON",
+      "XML",
+      "translation",
+      "stanza.io"
+    ],
+    "description": "JSON/XML Translator. Set/retrieve data from XML just like working with a dictionary.",
+    "homepage": "https://github.com/otalk/jxt",
+    "license": "MIT"
+  },
+  {
+    "id": "ms",
+    "author": "rauchg",
+    "description": "Tiny ms conversion utility"
+  },
+  {
+    "id": "moonboots",
+    "author": "henrikjoreteg",
+    "tags": [
+      "commonjs",
+      "clientside",
+      "browserify",
+      "singlepage"
+    ],
+    "description": "A set of tools and conventions for building/serving clientside apps with node.js",
+    "homepage": "https://github.com/henrikjoreteg/moonboots",
+    "license": "MIT"
+  },
+  {
+    "id": "moonboots_hapi",
+    "author": "gar",
+    "description": "Moonboots plugin that allows it to serve files using a hapi server",
+    "homepage": "https://github.com/wraithgar/moonboots_hapi",
+    "license": "MIT"
+  },
+  {
     "id": "photograb",
     "author": "henrikjoreteg",
     "tags": [
@@ -626,20 +667,16 @@
     "license": "MIT"
   },
   {
-    "id": "ms",
-    "author": "rauchg",
-    "description": "Tiny ms conversion utility"
-  },
-  {
-    "id": "raf-component",
-    "author": "tjholowaychuk",
+    "id": "pikaday",
+    "author": "rikkert",
     "tags": [
-      "animate",
-      "requestAnimationFrame",
-      "performance"
+      "datepicker",
+      "calendar",
+      "date"
     ],
-    "description": "request animation frame",
-    "homepage": "https://github.com/component/raf"
+    "description": "A refreshing JavaScript Datepicker — lightweight, no dependencies, modular CSS",
+    "homepage": "http://dbushell.github.io/Pikaday/",
+    "license": "BSD"
   },
   {
     "id": "query-param-getter",
@@ -653,20 +690,15 @@
     "license": "MIT"
   },
   {
-    "id": "precommit-hook",
-    "author": "nlf",
-    "description": "A useful pre-commit hook for git based projects that lints and runs npm test",
-    "homepage": "https://github.com/nlf/precommit-hook",
-    "license": "MIT"
-  },
-  {
-    "id": "semi-static",
-    "author": "henrikjoreteg",
+    "id": "raf-component",
+    "author": "tjholowaychuk",
     "tags": [
-      "express",
-      "shortcuts"
+      "animate",
+      "requestAnimationFrame",
+      "performance"
     ],
-    "description": "Simple, lazy way to serve a directory of semi-static pages in express.js. Handy for building quick 'static' pages inside an othewise 'dynamic' app."
+    "description": "request animation frame",
+    "homepage": "https://github.com/component/raf"
   },
   {
     "id": "reformer-username",
@@ -678,25 +710,19 @@
     "description": "Field plugin for reformer, that handles the annoying problem of username validataion in forms."
   },
   {
-    "id": "reformer",
+    "id": "semi-static",
     "author": "henrikjoreteg",
     "tags": [
-      "form",
-      "browser"
+      "express",
+      "shortcuts"
     ],
-    "description": "Super customizable, Self-contained, self-rendering, self-validating forms that can only output valid data."
+    "description": "Simple, lazy way to serve a directory of semi-static pages in express.js. Handy for building quick 'static' pages inside an othewise 'dynamic' app."
   },
   {
-    "id": "rtcpeerconnection",
-    "author": "henrikjoreteg",
-    "tags": [
-      "browser",
-      "RTCPeerConnection",
-      "WebRTC",
-      "Jingle"
-    ],
-    "description": "A tiny browser module that normalizes and simplifies the API for WebRTC peer connections.",
-    "homepage": "https://github.com/HenrikJoreteg/RTCPeerConnection",
+    "id": "precommit-hook",
+    "author": "nlf",
+    "description": "A useful pre-commit hook for git based projects that lints and runs npm test",
+    "homepage": "https://github.com/nlf/precommit-hook",
     "license": "MIT"
   },
   {
@@ -712,17 +738,13 @@
     "license": "MIT"
   },
   {
-    "id": "simplewebrtc",
+    "id": "reformer",
     "author": "henrikjoreteg",
-    "description": "World's easiest webrtc",
-    "homepage": "https://github.com/henrikjoreteg/SimpleWebRTC"
-  },
-  {
-    "id": "stylizer",
-    "author": "latentflip",
-    "description": "Stylizer makes it super easy to integrate stylus, and stylus plugins, into a node/moonboots project.",
-    "homepage": "https://github.com/latentflip/stylizer",
-    "license": "MIT"
+    "tags": [
+      "form",
+      "browser"
+    ],
+    "description": "Super customizable, Self-contained, self-rendering, self-validating forms that can only output valid data."
   },
   {
     "id": "sound-effect-manager",
@@ -736,9 +758,46 @@
     "description": "Boxed software has 'em, now the web does too."
   },
   {
+    "id": "stylizer",
+    "author": "latentflip",
+    "description": "Stylizer makes it super easy to integrate stylus, and stylus plugins, into a node/moonboots project.",
+    "homepage": "https://github.com/latentflip/stylizer",
+    "license": "MIT"
+  },
+  {
+    "id": "rtcpeerconnection",
+    "author": "henrikjoreteg",
+    "tags": [
+      "browser",
+      "RTCPeerConnection",
+      "WebRTC",
+      "Jingle"
+    ],
+    "description": "A tiny browser module that normalizes and simplifies the API for WebRTC peer connections.",
+    "homepage": "https://github.com/HenrikJoreteg/RTCPeerConnection",
+    "license": "MIT"
+  },
+  {
+    "id": "simplewebrtc",
+    "author": "henrikjoreteg",
+    "description": "World's easiest webrtc",
+    "homepage": "https://github.com/henrikjoreteg/SimpleWebRTC"
+  },
+  {
     "id": "time-counter",
     "author": "henrikjoreteg",
     "description": "Simple time counter tracker"
+  },
+  {
+    "id": "transform-style",
+    "author": "henrikjoreteg",
+    "tags": [
+      "styles",
+      "css",
+      "browserify"
+    ],
+    "description": "Apply transform style property with proper prefix to an element. For use with browserify / CommonJS.",
+    "license": "MIT"
   },
   {
     "id": "translatez-hack",
@@ -749,17 +808,6 @@
       "browserify"
     ],
     "description": "Apply the translateZ hack in a cross-browser way. For use with browserify / CommonJS.",
-    "license": "MIT"
-  },
-  {
-    "id": "tryit",
-    "author": "henrikjoreteg",
-    "tags": [
-      "errors",
-      "try",
-      "errorhandling"
-    ],
-    "description": "Module to wrap try-catch for better performance and cleaner API.",
     "license": "MIT"
   },
   {
@@ -775,38 +823,24 @@
     "license": "MIT"
   },
   {
-    "id": "stanza.io",
-    "author": "lancestout",
-    "tags": [
-      "xmpp",
-      "websocket",
-      "stanza.io"
-    ],
-    "description": "Modern XMPP in the browser, with a JSON API",
-    "homepage": "http://stanza.io",
-    "license": "MIT"
-  },
-  {
-    "id": "transform-style",
+    "id": "wake-event",
     "author": "henrikjoreteg",
     "tags": [
-      "styles",
-      "css",
-      "browserify"
-    ],
-    "description": "Apply transform style property with proper prefix to an element. For use with browserify / CommonJS.",
-    "license": "MIT"
-  },
-  {
-    "id": "window-watcher",
-    "author": "henrikjoreteg",
-    "tags": [
-      "window",
-      "dom",
+      "browser",
       "events"
     ],
-    "description": "State object you can listen to for changes to window width.",
-    "homepage": "https://github.com/henrikjoreteg/window-watcher",
+    "description": "Detection for computer waking up from sleep.",
+    "license": "MIT"
+  },
+  {
+    "id": "tryit",
+    "author": "henrikjoreteg",
+    "tags": [
+      "errors",
+      "try",
+      "errorhandling"
+    ],
+    "description": "Module to wrap try-catch for better performance and cleaner API.",
     "license": "MIT"
   },
   {
@@ -821,13 +855,37 @@
     "license": "MIT"
   },
   {
-    "id": "wake-event",
+    "id": "wildemitter",
     "author": "henrikjoreteg",
     "tags": [
-      "browser",
+      "events",
+      "emitter",
+      "browser"
+    ],
+    "description": "A super lightweight EventEmitter similar to what comes in Node.js, but with a support for wildcard events '*' and grouped handlers"
+  },
+  {
+    "id": "window-watcher",
+    "author": "henrikjoreteg",
+    "tags": [
+      "window",
+      "dom",
       "events"
     ],
-    "description": "Detection for computer waking up from sleep.",
+    "description": "State object you can listen to for changes to window width.",
+    "homepage": "https://github.com/henrikjoreteg/window-watcher",
+    "license": "MIT"
+  },
+  {
+    "id": "stanza.io",
+    "author": "lancestout",
+    "tags": [
+      "xmpp",
+      "websocket",
+      "stanza.io"
+    ],
+    "description": "Modern XMPP in the browser, with a JSON API",
+    "homepage": "http://stanza.io",
     "license": "MIT"
   },
   {
@@ -851,13 +909,17 @@
     "homepage": "https://github.com/henrikjoreteg/webrtc.js"
   },
   {
-    "id": "wildemitter",
-    "author": "henrikjoreteg",
+    "id": "xhr",
+    "author": "raynos",
     "tags": [
-      "events",
-      "emitter",
-      "browser"
+      "xhr",
+      "http",
+      "xmlhttprequest",
+      "xhr2",
+      "browserify"
     ],
-    "description": "A super lightweight EventEmitter similar to what comes in Node.js, but with a support for wildcard events '*' and grouped handlers"
+    "description": "small xhr abstraction",
+    "homepage": "https://github.com/Raynos/xhr",
+    "license": "MIT"
   }
 ]

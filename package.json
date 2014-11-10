@@ -51,6 +51,7 @@
     "ampersand-class-extend",
     "ampersand-collection",
     "ampersand-collection-underscore-mixin",
+    "ampersand-dom",
     "ampersand-domthing-mixin",
     "ampersand-form-view",
     "ampersand-input-view",
@@ -87,7 +88,10 @@
     "getusermedia",
     "hammerjs",
     "hark",
+    "hidden",
     "image-to-data-uri",
+    "img",
+    "is-dom",
     "jingle",
     "jingle-rtcpeerconnection",
     "jxt",
@@ -125,6 +129,7 @@
     "webrtcsupport",
     "wildemitter",
     "window-watcher",
+    "xhr",
     "zepto-detect"
   ],
   "repository": {
