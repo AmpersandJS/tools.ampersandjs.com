@@ -137,7 +137,9 @@
     "url": "https://github.com/ampersandjs/tools.ampersandjs.com.git"
   },
   "scripts": {
+    "build": "node ./build.js",
+    "fetch": "node fetchModules.js",
     "start": "npm run build && servedir .",
-    "build": "node ./build.js"
+    "yolo": "npm run fetch && npm run build"
   }
 }
