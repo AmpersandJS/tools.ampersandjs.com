@@ -56,6 +56,7 @@
     "ampersand-dom",
     "ampersand-drawer-view",
     "ampersand-expanding-textarea-view",
+    "ampersand-file-drop-view",
     "ampersand-filereader-input-view",
     "ampersand-floatinglabel-input-view",
     "ampersand-form-view",
