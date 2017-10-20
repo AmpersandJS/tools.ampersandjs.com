@@ -66,6 +66,7 @@
     "ampersand-mixins",
     "ampersand-modal-view",
     "ampersand-model",
+    "ampersand-multifield-view",
     "ampersand-multiselect-view",
     "ampersand-registry",
     "ampersand-rest-collection",
