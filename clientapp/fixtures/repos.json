@@ -1,5 +1,17 @@
 [
   {
+    "id": "add-keyup-events",
+    "author": "henrikjoreteg",
+    "tags": [
+      "input",
+      "events",
+      "dom"
+    ],
+    "description": "Emit custom events from an input so you can do stuff like listening for \"enter\" and \"esc\" events the same way as you would \"keyup\".",
+    "homepage": "https://github.com/HenrikJoreteg/add-keyup-events",
+    "license": "MIT"
+  },
+  {
     "id": "ampersand-avatar-input-view",
     "author": "latentflip",
     "description": "",
@@ -7,42 +19,303 @@
     "license": "ISC"
   },
   {
-    "id": "ampersand-state-fluxible-mixin",
+    "id": "ampersand-filereader-input-view",
+    "author": "gdibble",
+    "tags": [
+      "forms",
+      "ampersand",
+      "file",
+      "reader",
+      "filereader"
+    ],
+    "description": "A view module for returning metadata via callback using browser FileReader.",
+    "homepage": "https://github.com/firstclass/ampersand-filereader-input-view",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand-dom",
+    "author": "andyet-ops",
+    "tags": [
+      "dom",
+      "binding"
+    ],
+    "description": "Super light-weight DOM manipulation lib.",
+    "homepage": "https://github.com/ampersandjs/ampersand-dom",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand-array-input-view",
+    "author": "cdaringe",
+    "tags": [
+      "forms",
+      "ampersand",
+      "browser"
+    ],
+    "description": "A view module for intelligently rendering and validating inputs that should produce an array of values. Works well with ampersand-form-view.",
+    "homepage": "https://github.com/ampersandjs/ampersand-array-input-view",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand-expanding-textarea-view",
+    "author": "beardfury",
+    "tags": [
+      "Ampersand",
+      "textarea",
+      "form",
+      "expanding-textarea"
+    ],
+    "description": "A small ampersand.js tool to create an expanding textarea view for an ampersand-form-view",
+    "homepage": "https://github.com/datuhealth/ampersand-expanding-textarea-view",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "ampersand-controller-router",
+    "author": "simme",
+    "tags": [
+      "ampersand",
+      "controller",
+      "router",
+      "mvc"
+    ],
+    "description": "Allows you to map \"controllers\" to routes.",
+    "homepage": "https://github.com/simme/ampersand-controller-router",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand-multiselect-view",
+    "author": "kylefarris",
+    "tags": [
+      "ampersand",
+      "form",
+      "view",
+      "select",
+      "multiple"
+    ],
+    "description": "A view module for intelligently rendering and validating multiple selectbox input. Works well with ampersand-form-view. Based off of ampersand-select-view.",
+    "homepage": "https://github.com/kylefarris/ampersand-multiselect-view",
+    "license": "MIT"
+  },
+  {
+    "id": "andlog",
+    "author": "henrikjoreteg",
+    "description": "Super-simple, client-side CommonJS logging thingy",
+    "homepage": "https://github.com/HenrikJoreteg/andlog"
+  },
+  {
+    "id": "ampersand-collection",
+    "author": "cdaringe",
+    "tags": [
+      "collection",
+      "client",
+      "mvc"
+    ],
+    "description": "A way to store/manage objects or models.",
+    "homepage": "https://github.com/ampersandjs/ampersand-collection",
+    "license": "MIT"
+  },
+  {
+    "id": "domready",
+    "author": "ded",
+    "tags": [
+      "ender",
+      "domready",
+      "dom"
+    ],
+    "description": "modern domready",
+    "homepage": "https://github.com/ded/domready"
+  },
+  {
+    "id": "ampersand-registry",
+    "author": "henrikjoreteg",
+    "tags": [
+      "models",
+      "collection"
+    ],
+    "description": "Global model registry for tracking instantiated models accross collections.",
+    "homepage": "https://github.com/ampersandjs/ampersand-registry",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand-json-patch",
+    "author": "winduptoy",
+    "tags": [
+      "ampersand",
+      "json",
+      "patch"
+    ],
+    "description": "Adds JSON Patch (RFC 6902) support to Ampersand models.",
+    "homepage": "https://github.com/winduptoy/ampersand-json-patch",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand-rest-collection",
+    "author": "fyockm",
+    "tags": [
+      "collection",
+      "rest",
+      "models"
+    ],
+    "description": "ampersand-collection with REST and Lodash mixins.",
+    "homepage": "https://github.com/ampersandjs/ampersand-rest-collection",
+    "license": "MIT"
+  },
+  {
+    "id": "concert",
+    "author": "moll",
+    "tags": [
+      "bind",
+      "emitter",
+      "event",
+      "eventemitter",
+      "events",
+      "observer",
+      "pubsub",
+      "trigger"
+    ],
+    "description": "An event library that implements the observer pattern (a.k.a publish/subscribe). Similar to Node's EventEmitter and Backbone.Events, but independent, minimal and light-weight.",
+    "homepage": "https://github.com/moll/js-concert",
+    "license": "LAGPL"
+  },
+  {
+    "id": "hammerjs",
+    "author": "arschmitz",
+    "tags": [
+      "touch",
+      "gestures"
+    ],
+    "description": "A javascript library for multi-touch gestures",
+    "homepage": "http://hammerjs.github.io/",
+    "license": "MIT"
+  },
+  {
+    "id": "semi-static",
+    "author": "henrikjoreteg",
+    "tags": [
+      "express",
+      "shortcuts"
+    ],
+    "description": "Simple, lazy way to serve a directory of semi-static pages in express.js. Handy for building quick 'static' pages inside an othewise 'dynamic' app.",
+    "homepage": "https://github.com/HenrikJoreteg/semi-static#readme",
+    "license": "MIT"
+  },
+  {
+    "id": "is-dom",
+    "author": "yoshuawuyts",
+    "tags": [
+      "dom",
+      "html",
+      "is dom",
+      "dom node",
+      "dom object"
+    ],
+    "description": "Check if the given object is a dom node",
+    "homepage": "https://github.com/npm-dom/is-dom#readme",
+    "license": "MIT"
+  },
+  {
+    "id": "moment",
+    "author": "ichernev",
+    "tags": [
+      "moment",
+      "date",
+      "time",
+      "parse",
+      "format",
+      "validate",
+      "i18n",
+      "l10n",
+      "ender"
+    ],
+    "description": "Parse, validate, manipulate, and display dates",
+    "homepage": "http://momentjs.com",
+    "license": "MIT"
+  },
+  {
+    "id": "slugger",
+    "author": "fyockm",
+    "tags": [
+      "utils",
+      "browser",
+      "url"
+    ],
+    "description": "Takes a string, returns a url friendly string. Works in browser and node. Dead simple.",
+    "homepage": "https://github.com/henrikjoreteg/slugger",
+    "license": "MIT"
+  },
+  {
+    "id": "simplewebrtc",
+    "author": "andyet-ops",
+    "description": "World's easiest webrtc",
+    "homepage": "https://github.com/andyet/SimpleWebRTC#readme",
+    "license": "MIT"
+  },
+  {
+    "id": "xhr",
+    "author": "raynos",
+    "tags": [
+      "xhr",
+      "http",
+      "xmlhttprequest",
+      "xhr2",
+      "browserify"
+    ],
+    "description": "small xhr abstraction",
+    "homepage": "https://github.com/naugtur/xhr",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand",
+    "author": "henrikjoreteg",
+    "tags": [
+      "cli",
+      "clientside",
+      "single page apps"
+    ],
+    "description": "CLI tool for generating single page apps a. la. http://humanjavascript.com",
+    "homepage": "https://github.com/ampersandjs/ampersand",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand-collection-fluxible-mixin",
     "author": "mikepb",
     "tags": [
       "amperesand",
+      "collection",
       "dehydrate",
       "fluxible",
       "mixin",
       "model",
       "rehydrate",
-      "state",
       "store"
     ],
     "description": "This module implements the `dehydrate` and `rehydrate` methods for [Ampersand.js][] states and models to be used as [Fluxible][fluxible] Stores.",
-    "homepage": "http://github.com/mikepb/ampersand-state-fluxible-mixin",
+    "homepage": "http://github.com/mikepb/ampersand-collection-fluxible-mixin",
     "license": "MIT"
   },
   {
-    "id": "event-component",
-    "author": "tjholowaychuk",
+    "id": "ampersand-class-extend",
+    "author": "fyockm",
     "tags": [
-      "event",
-      "events"
+      "ampersand",
+      "inheritance",
+      "class"
     ],
-    "description": "Event binding component"
+    "description": "JS class extension tool for enabling easily extending prototype with multiple objects.",
+    "homepage": "https://github.com/ampersandjs/ampersand-class-extend",
+    "license": "MIT"
   },
   {
-    "id": "cookie-getter",
-    "author": "henrikjoreteg",
+    "id": "ampersand-drawer-view",
+    "author": "scottcorgan",
     "tags": [
-      "client",
-      "clientmodules",
-      "cookie",
-      "cookies"
+      "backbone",
+      "view",
+      "render",
+      "menu",
+      "hamburger"
     ],
-    "description": "Super light, high performance clientside cookie reader module.",
-    "homepage": "https://github.com/HenrikJoreteg/cookie-getter",
+    "description": "Ampersand view class for hamburger drawer-like layouts",
+    "homepage": "https://github.com/scottcorgan/ampersand-drawer-view",
     "license": "MIT"
   },
   {
@@ -55,6 +328,56 @@
     ],
     "description": "A mixin for extending ampersand-collection with underscore methods.",
     "homepage": "https://github.com/ampersandjs/ampersand-collection-underscore-mixin",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand-sanitized-html-data-type",
+    "author": "mikepb",
+    "tags": [
+      "amperesand",
+      "crypto",
+      "gumbo",
+      "html",
+      "sanitize",
+      "signature",
+      "whitelist",
+      "xss"
+    ],
+    "description": "This module implements an isomorphic sanitized HTML data type for [Ampersand.js][]. On the server, [Google's Gumbo HTML parser][gumbo] is used to parse and sanitize the HTML data. In the browser, the sanitized value is used when rendering user-generated c",
+    "homepage": "http://github.com/mikepb/ampersand-sanitized-html-data-type",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand-store",
+    "author": "robrichard",
+    "tags": [
+      "ampersand",
+      "backbone",
+      "store",
+      "flux",
+      "dispatcher",
+      "model",
+      "collection"
+    ],
+    "description": "A store for use with ampersand or backbone projects and flux dispatchers",
+    "homepage": "https://github.com/robrichard/ampersand-store",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "ampersand-mixins",
+    "author": "herkyl",
+    "description": "Use Ampersand-mixins to mix multiple mixins into a single Ampersand object. Ampersand-mixins merges all Ampersand specific properties such as props, events, bindings, etc."
+  },
+  {
+    "id": "milliseconds",
+    "author": "henrikjoreteg",
+    "tags": [
+      "time",
+      "conversion",
+      "milliseconds"
+    ],
+    "description": "Insanely lightweight module for converting times to milliseconds.",
+    "homepage": "https://github.com/henrikjoreteg/milliseconds",
     "license": "MIT"
   },
   {
@@ -87,15 +410,28 @@
     "license": "Apache-2.0"
   },
   {
-    "id": "ampersand-array-input-view",
+    "id": "ampersand-grid-view",
+    "author": "simme",
+    "tags": [
+      "ampersand",
+      "view",
+      "collection",
+      "grid"
+    ],
+    "description": "A collection backed grid view.",
+    "homepage": "https://github.com/simme/ampersand-grid-view",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand-form-view",
     "author": "cdaringe",
     "tags": [
       "forms",
       "ampersand",
       "browser"
     ],
-    "description": "A view module for intelligently rendering and validating inputs that should produce an array of values. Works well with ampersand-form-view.",
-    "homepage": "https://github.com/ampersandjs/ampersand-array-input-view",
+    "description": "Completely customizable form lib for bulletproof clientside forms.",
+    "homepage": "https://github.com/ampersandjs/ampersand-form-view",
     "license": "MIT"
   },
   {
@@ -111,480 +447,15 @@
     "license": "MIT"
   },
   {
-    "id": "ampersand",
-    "author": "henrikjoreteg",
-    "tags": [
-      "cli",
-      "clientside",
-      "single page apps"
-    ],
-    "description": "CLI tool for generating single page apps a. la. http://humanjavascript.com",
-    "homepage": "https://github.com/ampersandjs/ampersand",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-collection",
-    "author": "cdaringe",
-    "tags": [
-      "collection",
-      "client",
-      "mvc"
-    ],
-    "description": "A way to store/manage objects or models.",
-    "homepage": "https://github.com/ampersandjs/ampersand-collection",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-drawer-view",
-    "author": "scottcorgan",
-    "tags": [
-      "backbone",
-      "view",
-      "render",
-      "menu",
-      "hamburger"
-    ],
-    "description": "Ampersand view class for hamburger drawer-like layouts",
-    "homepage": "https://github.com/scottcorgan/ampersand-drawer-view",
-    "license": "MIT"
-  },
-  {
-    "id": "bind-transforms",
-    "author": "henrikjoreteg",
-    "tags": [
-      "humanjs",
-      "backbone",
-      "views",
-      "binding",
-      "transforms"
-    ],
-    "description": "Bind models properties to properly prefixed CSS transforms in backbone/humanjs views.",
-    "homepage": "https://github.com/HenrikJoreteg/bind-transforms",
-    "license": "MIT"
-  },
-  {
-    "id": "hark",
-    "author": "latentflip",
-    "description": "Converts an audio stream to speech events in the browser",
-    "homepage": "https://github.com/latentflip/hark#readme",
-    "license": "MIT"
-  },
-  {
-    "id": "sound-effect-manager",
-    "author": "henrikjoreteg",
-    "description": "Easy way to manage and play sound effects using HTML5 Web Audio API",
-    "homepage": "https://github.com/henrikjoreteg/SoundEffectManager#readme"
-  },
-  {
-    "id": "wake-event",
-    "author": "henrikjoreteg",
-    "tags": [
-      "browser",
-      "events"
-    ],
-    "description": "Detection for computer waking up from sleep.",
-    "license": "MIT"
-  },
-  {
-    "id": "andlog",
-    "author": "henrikjoreteg",
-    "description": "Super-simple, client-side CommonJS logging thingy",
-    "homepage": "https://github.com/HenrikJoreteg/andlog"
-  },
-  {
-    "id": "is-dom",
-    "author": "yoshuawuyts",
-    "tags": [
-      "dom",
-      "html",
-      "is dom",
-      "dom node",
-      "dom object"
-    ],
-    "description": "Check if the given object is a dom node",
-    "homepage": "https://github.com/npm-dom/is-dom#readme",
-    "license": "MIT"
-  },
-  {
-    "id": "time-counter",
-    "author": "henrikjoreteg",
-    "description": "Simple time counter tracker",
-    "homepage": "https://github.com/henrikjoreteg/time-counter#readme"
-  },
-  {
-    "id": "ampersand-form-view",
-    "author": "cdaringe",
+    "id": "ampersand-multifield-view",
+    "author": "yola",
     "tags": [
       "forms",
       "ampersand",
       "browser"
     ],
-    "description": "Completely customizable form lib for bulletproof clientside forms.",
-    "homepage": "https://github.com/ampersandjs/ampersand-form-view",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-rest-collection",
-    "author": "fyockm",
-    "tags": [
-      "collection",
-      "rest",
-      "models"
-    ],
-    "description": "ampersand-collection with REST and Lodash mixins.",
-    "homepage": "https://github.com/ampersandjs/ampersand-rest-collection",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-view-switcher",
-    "author": "dhritzkiv",
-    "tags": [
-      "ampersand",
-      "views",
-      "backbone",
-      "clientside"
-    ],
-    "description": "A utility for swapping out views inside a container element.",
-    "homepage": "https://github.com/ampersandjs/ampersand-view-switcher",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-filereader-input-view",
-    "author": "gdibble",
-    "tags": [
-      "forms",
-      "ampersand",
-      "file",
-      "reader",
-      "filereader"
-    ],
-    "description": "A view module for returning metadata via callback using browser FileReader.",
-    "homepage": "https://github.com/firstclass/ampersand-filereader-input-view",
-    "license": "MIT"
-  },
-  {
-    "id": "reformer-username",
-    "author": "henrikjoreteg",
-    "tags": [
-      "form",
-      "browser"
-    ],
-    "description": "Field plugin for reformer, that handles the annoying problem of username validataion in forms."
-  },
-  {
-    "id": "ampersand-view",
-    "author": "cdaringe",
-    "tags": [
-      "backbone",
-      "view",
-      "browser",
-      "browserify"
-    ],
-    "description": "A smart base view for Backbone apps, to make it easy to bind collections and properties to the DOM.",
-    "homepage": "https://github.com/ampersandjs/ampersand-view",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-controller-router",
-    "author": "simme",
-    "tags": [
-      "ampersand",
-      "controller",
-      "router",
-      "mvc"
-    ],
-    "description": "Allows you to map \"controllers\" to routes.",
-    "homepage": "https://github.com/simme/ampersand-controller-router",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-json-patch",
-    "author": "winduptoy",
-    "tags": [
-      "ampersand",
-      "json",
-      "patch"
-    ],
-    "description": "Adds JSON Patch (RFC 6902) support to Ampersand models.",
-    "homepage": "https://github.com/winduptoy/ampersand-json-patch",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-expanding-textarea-view",
-    "author": "beardfury",
-    "tags": [
-      "Ampersand",
-      "textarea",
-      "form",
-      "expanding-textarea"
-    ],
-    "description": "A small ampersand.js tool to create an expanding textarea view for an ampersand-form-view",
-    "homepage": "https://github.com/datuhealth/ampersand-expanding-textarea-view",
-    "license": "Apache-2.0"
-  },
-  {
-    "id": "domready",
-    "author": "ded",
-    "tags": [
-      "ender",
-      "domready",
-      "dom"
-    ],
-    "description": "modern domready",
-    "homepage": "https://github.com/ded/domready"
-  },
-  {
-    "id": "ampersand-mixins",
-    "author": "herkyl",
-    "description": "Use Ampersand-mixins to mix multiple mixins into a single Ampersand object. Ampersand-mixins merges all Ampersand specific properties such as props, events, bindings, etc."
-  },
-  {
-    "id": "ampersand-registry",
-    "author": "henrikjoreteg",
-    "tags": [
-      "models",
-      "collection"
-    ],
-    "description": "Global model registry for tracking instantiated models accross collections.",
-    "homepage": "https://github.com/ampersandjs/ampersand-registry",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-class-extend",
-    "author": "fyockm",
-    "tags": [
-      "ampersand",
-      "inheritance",
-      "class"
-    ],
-    "description": "JS class extension tool for enabling easily extending prototype with multiple objects.",
-    "homepage": "https://github.com/ampersandjs/ampersand-class-extend",
-    "license": "MIT"
-  },
-  {
-    "id": "array-jumper",
-    "author": "henrikjoreteg",
-    "tags": [
-      "util",
-      "array",
-      "index"
-    ],
-    "description": "Jump forward or backward through an array by an index based on an item already in the array.",
-    "license": "MIT"
-  },
-  {
-    "id": "xhr",
-    "author": "raynos",
-    "tags": [
-      "xhr",
-      "http",
-      "xmlhttprequest",
-      "xhr2",
-      "browserify"
-    ],
-    "description": "small xhr abstraction",
-    "homepage": "https://github.com/naugtur/xhr",
-    "license": "MIT"
-  },
-  {
-    "id": "photograb",
-    "author": "henrikjoreteg",
-    "tags": [
-      "browser",
-      "getUserMedia",
-      "webrtc"
-    ],
-    "description": "Browser module for capturing snapshots from a video (or other compatible) element.",
-    "license": "MIT"
-  },
-  {
-    "id": "array-next",
-    "author": "henrikjoreteg",
-    "tags": [
-      "util",
-      "array",
-      "index"
-    ],
-    "description": "Advance to the next item in the array looping when hitting the end.",
-    "license": "MIT"
-  },
-  {
-    "id": "add-keyup-events",
-    "author": "henrikjoreteg",
-    "tags": [
-      "input",
-      "events",
-      "dom"
-    ],
-    "description": "Emit custom events from an input so you can do stuff like listening for \"enter\" and \"esc\" events the same way as you would \"keyup\".",
-    "homepage": "https://github.com/HenrikJoreteg/add-keyup-events",
-    "license": "MIT"
-  },
-  {
-    "id": "async",
-    "author": "caolan",
-    "tags": [
-      "async",
-      "callback",
-      "module",
-      "utility"
-    ],
-    "description": "Higher-order functions and common patterns for asynchronous code",
-    "homepage": "https://github.com/caolan/async#readme",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-multiselect-view",
-    "author": "kylefarris",
-    "tags": [
-      "ampersand",
-      "form",
-      "view",
-      "select",
-      "multiple"
-    ],
-    "description": "A view module for intelligently rendering and validating multiple selectbox input. Works well with ampersand-form-view. Based off of ampersand-select-view.",
-    "homepage": "https://github.com/kylefarris/ampersand-multiselect-view",
-    "license": "MIT"
-  },
-  {
-    "id": "emoji-images",
-    "author": "henrikjoreteg",
-    "description": "Replace stuff like :smiley: in text with <img> tags of a corresponding image."
-  },
-  {
-    "id": "ampersand-store",
-    "author": "robrichard",
-    "tags": [
-      "ampersand",
-      "backbone",
-      "store",
-      "flux",
-      "dispatcher",
-      "model",
-      "collection"
-    ],
-    "description": "A store for use with ampersand or backbone projects and flux dispatchers",
-    "homepage": "https://github.com/robrichard/ampersand-store",
-    "license": "Apache-2.0"
-  },
-  {
-    "id": "extend-object",
-    "author": "henrikjoreteg",
-    "tags": [
-      "extend",
-      "object",
-      "underscore"
-    ],
-    "description": "Underscore's extend method as a standalone Common JS module.",
-    "homepage": "https://github.com/henrikjoreteg/extend-object",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-collection-fluxible-mixin",
-    "author": "mikepb",
-    "tags": [
-      "amperesand",
-      "collection",
-      "dehydrate",
-      "fluxible",
-      "mixin",
-      "model",
-      "rehydrate",
-      "store"
-    ],
-    "description": "This module implements the `dehydrate` and `rehydrate` methods for [Ampersand.js][] states and models to be used as [Fluxible][fluxible] Stores.",
-    "homepage": "http://github.com/mikepb/ampersand-collection-fluxible-mixin",
-    "license": "MIT"
-  },
-  {
-    "id": "loading-stats",
-    "author": "henrikjoreteg",
-    "description": "For tracking web app loading performance for single page apps."
-  },
-  {
-    "id": "ampersand-grid-view",
-    "author": "simme",
-    "tags": [
-      "ampersand",
-      "view",
-      "collection",
-      "grid"
-    ],
-    "description": "A collection backed grid view.",
-    "homepage": "https://github.com/simme/ampersand-grid-view",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-modal-view",
-    "author": "simme",
-    "tags": [
-      "ampersand",
-      "modal",
-      "view"
-    ],
-    "description": "Modal view for Ampersand.js",
-    "license": "MIT"
-  },
-  {
-    "id": "mockconsole",
-    "author": "henrikjoreteg",
-    "tags": [
-      "browser",
-      "console",
-      "logging"
-    ],
-    "description": "An object with all the same methods as console in the browser. But does nothing.",
-    "license": "MIT"
-  },
-  {
-    "id": "attachmediastream",
-    "author": "xdumaine",
-    "tags": [
-      "browser",
-      "getUserMedia",
-      "browserify",
-      "WebRTC",
-      "video"
-    ],
-    "description": "cross-browser way to attach a media stream to a video element.",
-    "homepage": "https://github.com/HenrikJoreteg/attachMediaStream#readme",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-input-view",
-    "author": "andyet-ops",
-    "tags": [
-      "forms",
-      "ampersand",
-      "browser"
-    ],
-    "description": "A view module for intelligently rendering and validating input. Works well with ampersand-form-view.",
-    "homepage": "https://github.com/ampersandjs/ampersand-input-view",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-sync",
-    "author": "dhritzkiv",
-    "tags": [
-      "backbone",
-      "sync",
-      "rest",
-      "ampersand"
-    ],
-    "description": "Provides sync behavior for updating data from ampersand models and collections to the server.",
-    "homepage": "https://github.com/ampersandjs/ampersand-sync",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-dom",
-    "author": "andyet-ops",
-    "tags": [
-      "dom",
-      "binding"
-    ],
-    "description": "Super light-weight DOM manipulation lib.",
-    "homepage": "https://github.com/ampersandjs/ampersand-dom",
+    "description": "A view module for intelligently grouping multiple field views. Works well with ampersand-form-view",
+    "homepage": "https://github.com/yola/ampersand-multifield-view",
     "license": "MIT"
   },
   {
@@ -602,84 +473,86 @@
     "license": "MIT"
   },
   {
-    "id": "hammerjs",
-    "author": "arschmitz",
-    "tags": [
-      "touch",
-      "gestures"
-    ],
-    "description": "A javascript library for multi-touch gestures",
-    "homepage": "http://hammerjs.github.io/",
-    "license": "MIT"
-  },
-  {
-    "id": "bows",
-    "author": "latentflip",
-    "tags": [
-      "color",
-      "logging",
-      "chrome",
-      "console"
-    ],
-    "description": "Rainbowed console logs for chrome, opera and firefox in development.",
-    "homepage": "https://github.com/latentflip/bows#readme",
-    "license": "MIT"
-  },
-  {
-    "id": "jingle-rtcpeerconnection",
-    "author": "lancestout",
-    "tags": [
-      "RTCPeerConnection",
-      "webrtc",
-      "xmpp",
-      "jingle"
-    ],
-    "description": "A wrapper for RTCPeerConnection that uses a JSON API instead of raw SDP.",
-    "license": "MIT"
-  },
-  {
-    "id": "clientconfig",
+    "id": "bind-transforms",
     "author": "henrikjoreteg",
-    "description": "Simple way to pass config items from server to client",
-    "homepage": "https://github.com/henrikjoreteg/clientconfig#readme",
+    "tags": [
+      "humanjs",
+      "backbone",
+      "views",
+      "binding",
+      "transforms"
+    ],
+    "description": "Bind models properties to properly prefixed CSS transforms in backbone/humanjs views.",
+    "homepage": "https://github.com/HenrikJoreteg/bind-transforms",
     "license": "MIT"
   },
   {
-    "id": "system-requirements",
-    "author": "henrikjoreteg",
-    "description": "Boxed software has 'em, now the web does too.",
-    "homepage": "https://github.com/henrikjoreteg/system-requirements.js#readme"
-  },
-  {
-    "id": "hidden",
-    "author": "raynos",
-    "tags": [],
-    "description": "Cross browser Element#hidden",
-    "homepage": "https://github.com/npm-dom/hidden",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-select-view",
-    "author": "andyet-ops",
+    "id": "ampersand-modal-view",
+    "author": "simme",
     "tags": [
       "ampersand",
-      "form",
-      "view",
-      "select"
+      "modal",
+      "view"
     ],
-    "description": "A view module for intelligently rendering and validating selectbox input. Works well with ampersand-form-view.",
-    "homepage": "https://github.com/AmpersandJS/ampersand-select-view",
+    "description": "Modal view for Ampersand.js",
     "license": "MIT"
   },
   {
-    "id": "dummy-api",
+    "id": "ampersand-input-view",
+    "author": "andyet-ops",
+    "tags": [
+      "forms",
+      "ampersand",
+      "browser"
+    ],
+    "description": "A view module for intelligently rendering and validating input. Works well with ampersand-form-view.",
+    "homepage": "https://github.com/ampersandjs/ampersand-input-view",
+    "license": "MIT"
+  },
+  {
+    "id": "cookie-getter",
     "author": "henrikjoreteg",
     "tags": [
-      "REST",
-      "api",
-      "development"
+      "client",
+      "clientmodules",
+      "cookie",
+      "cookies"
     ],
-    "description": "Util for making a fake little RESTful resource in express.js.",
+    "description": "Super light, high performance clientside cookie reader module.",
+    "homepage": "https://github.com/HenrikJoreteg/cookie-getter",
+    "license": "MIT"
+  },
+  {
+    "id": "emoji-images",
+    "author": "henrikjoreteg",
+    "description": "Replace stuff like :smiley: in text with <img> tags of a corresponding image."
+  },
+  {
+    "id": "ampersand-state-fluxible-mixin",
+    "author": "mikepb",
+    "tags": [
+      "amperesand",
+      "dehydrate",
+      "fluxible",
+      "mixin",
+      "model",
+      "rehydrate",
+      "state",
+      "store"
+    ],
+    "description": "This module implements the `dehydrate` and `rehydrate` methods for [Ampersand.js][] states and models to be used as [Fluxible][fluxible] Stores.",
+    "homepage": "http://github.com/mikepb/ampersand-state-fluxible-mixin",
+    "license": "MIT"
+  },
+  {
+    "id": "array-jumper",
+    "author": "henrikjoreteg",
+    "tags": [
+      "util",
+      "array",
+      "index"
+    ],
+    "description": "Jump forward or backward through an array by an index based on an item already in the array.",
     "license": "MIT"
   },
   {
@@ -693,15 +566,44 @@
     "description": "Super-simple tool for dynamically setting the favicon image on a page."
   },
   {
-    "id": "getusermedia",
-    "author": "andyet-ops",
+    "id": "attachmediastream",
+    "author": "xdumaine",
     "tags": [
       "browser",
       "getUserMedia",
-      "WebRTC"
+      "browserify",
+      "WebRTC",
+      "video"
     ],
-    "description": "cross-browser getUserMedia shim with node.js style error-first API.",
-    "homepage": "https://github.com/otalk/getUserMedia#readme",
+    "description": "cross-browser way to attach a media stream to a video element.",
+    "homepage": "https://github.com/HenrikJoreteg/attachMediaStream#readme",
+    "license": "MIT"
+  },
+  {
+    "id": "event-component",
+    "author": "tjholowaychuk",
+    "tags": [
+      "event",
+      "events"
+    ],
+    "description": "Event binding component"
+  },
+  {
+    "id": "array-next",
+    "author": "henrikjoreteg",
+    "tags": [
+      "util",
+      "array",
+      "index"
+    ],
+    "description": "Advance to the next item in the array looping when hitting the end.",
+    "license": "MIT"
+  },
+  {
+    "id": "clientconfig",
+    "author": "henrikjoreteg",
+    "description": "Simple way to pass config items from server to client",
+    "homepage": "https://github.com/henrikjoreteg/clientconfig#readme",
     "license": "MIT"
   },
   {
@@ -717,22 +619,15 @@
     "license": "MIT"
   },
   {
-    "id": "pikaday",
-    "author": "rikkert",
-    "tags": [
-      "datepicker",
-      "calendar",
-      "date"
-    ],
-    "description": "A refreshing JavaScript Datepicker — lightweight, no dependencies, modular CSS",
-    "homepage": "http://dbushell.github.io/Pikaday/",
-    "license": "(0BSD OR MIT)"
-  },
-  {
-    "id": "image-to-data-uri",
+    "id": "dummy-api",
     "author": "henrikjoreteg",
-    "description": "Clientside module (compatible with clientmodules) that takes an image url, downloads the image and creates a data URI for caching, etc.",
-    "homepage": "https://github.com/henrikjoreteg/image-to-data-uri.js#readme"
+    "tags": [
+      "REST",
+      "api",
+      "development"
+    ],
+    "description": "Util for making a fake little RESTful resource in express.js.",
+    "license": "MIT"
   },
   {
     "id": "backbone-events-standalone",
@@ -746,53 +641,93 @@
     "license": "MIT"
   },
   {
-    "id": "ampersand-multifield-view",
-    "author": "yola",
+    "id": "mockconsole",
+    "author": "henrikjoreteg",
     "tags": [
-      "forms",
-      "ampersand",
-      "browser"
+      "browser",
+      "console",
+      "logging"
     ],
-    "description": "A view module for intelligently grouping multiple field views. Works well with ampersand-form-view",
-    "homepage": "https://github.com/yola/ampersand-multifield-view",
+    "description": "An object with all the same methods as console in the browser. But does nothing.",
     "license": "MIT"
   },
   {
-    "id": "img",
-    "author": "kazmer",
-    "tags": [
-      "image",
-      "element",
-      "dom",
-      "tree",
-      "render",
-      "canvas"
-    ],
-    "description": "Convert any dom tree to an image element",
-    "homepage": "https://github.com/modulesio/img#readme",
-    "license": "ISC"
+    "id": "image-to-data-uri",
+    "author": "henrikjoreteg",
+    "description": "Clientside module (compatible with clientmodules) that takes an image url, downloads the image and creates a data URI for caching, etc.",
+    "homepage": "https://github.com/henrikjoreteg/image-to-data-uri.js#readme"
   },
   {
-    "id": "ampersand-file-drop-view",
+    "id": "photograb",
+    "author": "henrikjoreteg",
+    "tags": [
+      "browser",
+      "getUserMedia",
+      "webrtc"
+    ],
+    "description": "Browser module for capturing snapshots from a video (or other compatible) element.",
+    "license": "MIT"
+  },
+  {
+    "id": "hidden",
+    "author": "raynos",
+    "tags": [],
+    "description": "Cross browser Element#hidden",
+    "homepage": "https://github.com/npm-dom/hidden",
+    "license": "MIT"
+  },
+  {
+    "id": "query-param-getter",
+    "author": "henrikjoreteg",
+    "tags": [
+      "querystring",
+      "browser",
+      "url"
+    ],
+    "description": "Client module for grabbing query parameters by name from the URL.",
+    "license": "MIT"
+  },
+  {
+    "id": "media-query-listener",
+    "author": "jonathanp",
+    "description": "A module for observing media query breakpoint changes defined in CSS",
+    "homepage": "https://github.com/jonathanp/media-query-listener",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand-view-switcher",
     "author": "dhritzkiv",
     "tags": [
       "ampersand",
-      "file",
-      "view",
-      "drag",
-      "drop",
-      "input",
-      "dnd"
+      "views",
+      "backbone",
+      "clientside"
     ],
-    "description": "Drag-and-drop file view based on ampersand-view, and for use in ampersand-form-view",
-    "homepage": "https://github.com/dhritzkiv/ampersand-file-drop-view",
+    "description": "A utility for swapping out views inside a container element.",
+    "homepage": "https://github.com/ampersandjs/ampersand-view-switcher",
     "license": "MIT"
   },
   {
-    "id": "precommit-hook",
-    "author": "nlf",
-    "description": "A useful pre-commit hook for git based projects that lints and runs npm test",
-    "homepage": "https://github.com/nlf/precommit-hook",
+    "id": "jingle-rtcpeerconnection",
+    "author": "lancestout",
+    "tags": [
+      "RTCPeerConnection",
+      "webrtc",
+      "xmpp",
+      "jingle"
+    ],
+    "description": "A wrapper for RTCPeerConnection that uses a JSON API instead of raw SDP.",
+    "license": "MIT"
+  },
+  {
+    "id": "translatez-hack",
+    "author": "henrikjoreteg",
+    "tags": [
+      "styles",
+      "css",
+      "browserify"
+    ],
+    "description": "Apply the translateZ hack in a cross-browser way. For use with browserify / CommonJS.",
     "license": "MIT"
   },
   {
@@ -808,100 +743,63 @@
     "license": "MIT"
   },
   {
-    "id": "slugger",
-    "author": "fyockm",
+    "id": "pikaday",
+    "author": "rikkert",
     "tags": [
-      "utils",
+      "datepicker",
+      "calendar",
+      "date"
+    ],
+    "description": "A refreshing JavaScript Datepicker — lightweight, no dependencies, modular CSS",
+    "homepage": "http://dbushell.github.io/Pikaday/",
+    "license": "(0BSD OR MIT)"
+  },
+  {
+    "id": "moonboots_hapi",
+    "author": "andyet-ops",
+    "description": "Moonboots plugin that allows it to serve files using a hapi server",
+    "homepage": "https://github.com/wraithgar/moonboots_hapi#readme",
+    "license": "MIT"
+  },
+  {
+    "id": "mediastream-gain",
+    "author": "henrikjoreteg",
+    "tags": [
       "browser",
-      "url"
+      "getUserMedia",
+      "WebRTC",
+      "microphone",
+      "webaudio"
     ],
-    "description": "Takes a string, returns a url friendly string. Works in browser and node. Dead simple.",
-    "homepage": "https://github.com/henrikjoreteg/slugger",
+    "description": "cross-browser getUserMedia shim with node.js style error-first API.",
+    "homepage": "https://github.com/HenrikJoreteg/mediastream-gain",
     "license": "MIT"
   },
   {
-    "id": "translatez-hack",
+    "id": "time-counter",
+    "author": "henrikjoreteg",
+    "description": "Simple time counter tracker",
+    "homepage": "https://github.com/henrikjoreteg/time-counter#readme"
+  },
+  {
+    "id": "reformer-username",
     "author": "henrikjoreteg",
     "tags": [
-      "styles",
-      "css",
-      "browserify"
-    ],
-    "description": "Apply the translateZ hack in a cross-browser way. For use with browserify / CommonJS.",
-    "license": "MIT"
-  },
-  {
-    "id": "media-query-listener",
-    "author": "jonathanp",
-    "description": "A module for observing media query breakpoint changes defined in CSS",
-    "homepage": "https://github.com/jonathanp/media-query-listener",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-sanitized-html-data-type",
-    "author": "mikepb",
-    "tags": [
-      "amperesand",
-      "crypto",
-      "gumbo",
-      "html",
-      "sanitize",
-      "signature",
-      "whitelist",
-      "xss"
-    ],
-    "description": "This module implements an isomorphic sanitized HTML data type for [Ampersand.js][]. On the server, [Google's Gumbo HTML parser][gumbo] is used to parse and sanitize the HTML data. In the browser, the sanitized value is used when rendering user-generated c",
-    "homepage": "http://github.com/mikepb/ampersand-sanitized-html-data-type",
-    "license": "MIT"
-  },
-  {
-    "id": "zepto-detect",
-    "author": "henrikjoreteg",
-    "tags": [
-      "zepto",
+      "form",
       "browser"
     ],
-    "description": "The detect portion of zepto.js structured for use with browserify.",
-    "license": "MIT"
+    "description": "Field plugin for reformer, that handles the annoying problem of username validataion in forms."
   },
   {
-    "id": "concert",
-    "author": "moll",
-    "tags": [
-      "bind",
-      "emitter",
-      "event",
-      "eventemitter",
-      "events",
-      "observer",
-      "pubsub",
-      "trigger"
-    ],
-    "description": "An event library that implements the observer pattern (a.k.a publish/subscribe). Similar to Node's EventEmitter and Backbone.Events, but independent, minimal and light-weight.",
-    "homepage": "https://github.com/moll/js-concert",
-    "license": "LAGPL"
-  },
-  {
-    "id": "milliseconds",
+    "id": "window-watcher",
     "author": "henrikjoreteg",
     "tags": [
-      "time",
-      "conversion",
-      "milliseconds"
+      "window",
+      "dom",
+      "events"
     ],
-    "description": "Insanely lightweight module for converting times to milliseconds.",
-    "homepage": "https://github.com/henrikjoreteg/milliseconds",
-    "license": "MIT"
-  },
-  {
-    "id": "query-param-getter",
-    "author": "henrikjoreteg",
-    "tags": [
-      "querystring",
-      "browser",
-      "url"
-    ],
-    "description": "Client module for grabbing query parameters by name from the URL.",
+    "description": "State object you can listen to for changes to window width.",
+    "homepage": "https://github.com/henrikjoreteg/window-watcher",
     "license": "MIT"
   },
   {
@@ -909,28 +807,6 @@
     "author": "leo",
     "description": "Tiny milisecond conversion utility",
     "homepage": "https://github.com/zeit/ms#readme",
-    "license": "MIT"
-  },
-  {
-    "id": "ampersand-model",
-    "author": "dhritzkiv",
-    "tags": [
-      "model, ampersand, state"
-    ],
-    "description": "An extension to ampersand-state that adds methods and properties for working with a RESTful API.",
-    "homepage": "https://github.com/ampersandjs/ampersand-model",
-    "license": "MIT"
-  },
-  {
-    "id": "key-tree-store",
-    "author": "henrikjoreteg",
-    "tags": [
-      "events",
-      "keypath",
-      "trigger"
-    ],
-    "description": "Simple tool for storing/retrieving objects events based hierarchical keypaths.",
-    "homepage": "https://github.com/HenrikJoreteg/key-tree-store",
     "license": "MIT"
   },
   {
@@ -949,21 +825,131 @@
     "license": "MIT"
   },
   {
-    "id": "raf-component",
-    "author": "tjholowaychuk",
-    "tags": [
-      "animate",
-      "requestAnimationFrame",
-      "performance"
-    ],
-    "description": "request animation frame",
-    "homepage": "https://github.com/component/raf"
+    "id": "system-requirements",
+    "author": "henrikjoreteg",
+    "description": "Boxed software has 'em, now the web does too.",
+    "homepage": "https://github.com/henrikjoreteg/system-requirements.js#readme"
   },
   {
-    "id": "page",
-    "author": "tjholowaychuk",
-    "description": "Tiny client-side router",
-    "homepage": "https://github.com/visionmedia/page.js#readme",
+    "id": "wildemitter",
+    "author": "andyet",
+    "tags": [
+      "events",
+      "emitter",
+      "browser"
+    ],
+    "description": "A super lightweight EventEmitter similar to what comes in Node.js, but with a support for wildcard events '*' and grouped handlers",
+    "homepage": "https://github.com/HenrikJoreteg/wildemitter#readme"
+  },
+  {
+    "id": "stylizer",
+    "author": "latentflip",
+    "description": "Stylizer makes it super easy to integrate [Stylus](https://learnboost.github.io/stylus/), and stylus plugins, into a [Node.js](http://nodejs.org/)/[moonboots](https://github.com/HenrikJoreteg/moonboots) project.",
+    "homepage": "https://github.com/latentflip/stylizer#readme",
+    "license": "MIT"
+  },
+  {
+    "id": "sound-effect-manager",
+    "author": "henrikjoreteg",
+    "description": "Easy way to manage and play sound effects using HTML5 Web Audio API",
+    "homepage": "https://github.com/henrikjoreteg/SoundEffectManager#readme"
+  },
+  {
+    "id": "tryit",
+    "author": "henrikjoreteg",
+    "tags": [
+      "errors",
+      "try",
+      "errorhandling"
+    ],
+    "description": "Module to wrap try-catch for better performance and cleaner API.",
+    "homepage": "https://github.com/HenrikJoreteg/tryit#readme",
+    "license": "MIT"
+  },
+  {
+    "id": "hark",
+    "author": "latentflip",
+    "description": "Converts an audio stream to speech events in the browser",
+    "homepage": "https://github.com/latentflip/hark#readme",
+    "license": "MIT"
+  },
+  {
+    "id": "wake-event",
+    "author": "henrikjoreteg",
+    "tags": [
+      "browser",
+      "events"
+    ],
+    "description": "Detection for computer waking up from sleep.",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand-file-drop-view",
+    "author": "dhritzkiv",
+    "tags": [
+      "ampersand",
+      "file",
+      "view",
+      "drag",
+      "drop",
+      "input",
+      "dnd"
+    ],
+    "description": "Drag-and-drop file view based on ampersand-view, and for use in ampersand-form-view",
+    "homepage": "https://github.com/dhritzkiv/ampersand-file-drop-view",
+    "license": "MIT"
+  },
+  {
+    "id": "extend-object",
+    "author": "henrikjoreteg",
+    "tags": [
+      "extend",
+      "object",
+      "underscore"
+    ],
+    "description": "Underscore's extend method as a standalone Common JS module.",
+    "homepage": "https://github.com/henrikjoreteg/extend-object",
+    "license": "MIT"
+  },
+  {
+    "id": "webrtcsupport",
+    "author": "henrikjoreteg",
+    "tags": [
+      "browser",
+      "WebRTC"
+    ],
+    "description": "Browser module to detect support for webrtc and extract proper constructors.",
+    "homepage": "https://github.com/HenrikJoreteg/webrtcsupport#readme",
+    "license": "MIT"
+  },
+  {
+    "id": "loading-stats",
+    "author": "henrikjoreteg",
+    "description": "For tracking web app loading performance for single page apps."
+  },
+  {
+    "id": "rtcpeerconnection",
+    "author": "andyet-ops",
+    "tags": [
+      "browser",
+      "RTCPeerConnection",
+      "WebRTC",
+      "Jingle"
+    ],
+    "description": "A tiny browser module that normalizes and simplifies the API for WebRTC peer connections.",
+    "homepage": "https://github.com/otalk/RTCPeerConnection#readme",
+    "license": "MIT"
+  },
+  {
+    "id": "templatizer",
+    "author": "andyet-ops",
+    "tags": [
+      "browser",
+      "jade",
+      "templates"
+    ],
+    "description": "Simple solution for compiling jade templates into vanilla JS functions for blazin' fast client-side use.",
+    "homepage": "https://github.com/HenrikJoreteg/templatizer",
     "license": "MIT"
   },
   {
@@ -981,125 +967,40 @@
     "license": "MIT"
   },
   {
-    "id": "mediastream-gain",
+    "id": "bows",
+    "author": "latentflip",
+    "tags": [
+      "color",
+      "logging",
+      "chrome",
+      "console"
+    ],
+    "description": "Rainbowed console logs for chrome, opera and firefox in development.",
+    "homepage": "https://github.com/latentflip/bows#readme",
+    "license": "MIT"
+  },
+  {
+    "id": "key-tree-store",
     "author": "henrikjoreteg",
+    "tags": [
+      "events",
+      "keypath",
+      "trigger"
+    ],
+    "description": "Simple tool for storing/retrieving objects events based hierarchical keypaths.",
+    "homepage": "https://github.com/HenrikJoreteg/key-tree-store",
+    "license": "MIT"
+  },
+  {
+    "id": "getusermedia",
+    "author": "andyet-ops",
     "tags": [
       "browser",
       "getUserMedia",
-      "WebRTC",
-      "microphone",
-      "webaudio"
+      "WebRTC"
     ],
     "description": "cross-browser getUserMedia shim with node.js style error-first API.",
-    "homepage": "https://github.com/HenrikJoreteg/mediastream-gain",
-    "license": "MIT"
-  },
-  {
-    "id": "moonboots_hapi",
-    "author": "andyet-ops",
-    "description": "Moonboots plugin that allows it to serve files using a hapi server",
-    "homepage": "https://github.com/wraithgar/moonboots_hapi#readme",
-    "license": "MIT"
-  },
-  {
-    "id": "tryit",
-    "author": "henrikjoreteg",
-    "tags": [
-      "errors",
-      "try",
-      "errorhandling"
-    ],
-    "description": "Module to wrap try-catch for better performance and cleaner API.",
-    "homepage": "https://github.com/HenrikJoreteg/tryit#readme",
-    "license": "MIT"
-  },
-  {
-    "id": "moment",
-    "author": "ichernev",
-    "tags": [
-      "moment",
-      "date",
-      "time",
-      "parse",
-      "format",
-      "validate",
-      "i18n",
-      "l10n",
-      "ender"
-    ],
-    "description": "Parse, validate, manipulate, and display dates",
-    "homepage": "http://momentjs.com",
-    "license": "MIT"
-  },
-  {
-    "id": "transform-style",
-    "author": "henrikjoreteg",
-    "tags": [
-      "styles",
-      "css",
-      "browserify"
-    ],
-    "description": "Apply transform style property with proper prefix to an element. For use with browserify / CommonJS.",
-    "homepage": "https://github.com/HenrikJoreteg/transform-style#readme",
-    "license": "MIT"
-  },
-  {
-    "id": "semi-static",
-    "author": "henrikjoreteg",
-    "tags": [
-      "express",
-      "shortcuts"
-    ],
-    "description": "Simple, lazy way to serve a directory of semi-static pages in express.js. Handy for building quick 'static' pages inside an othewise 'dynamic' app.",
-    "homepage": "https://github.com/HenrikJoreteg/semi-static#readme",
-    "license": "MIT"
-  },
-  {
-    "id": "rtcpeerconnection",
-    "author": "andyet-ops",
-    "tags": [
-      "browser",
-      "RTCPeerConnection",
-      "WebRTC",
-      "Jingle"
-    ],
-    "description": "A tiny browser module that normalizes and simplifies the API for WebRTC peer connections.",
-    "homepage": "https://github.com/otalk/RTCPeerConnection#readme",
-    "license": "MIT"
-  },
-  {
-    "id": "window-watcher",
-    "author": "henrikjoreteg",
-    "tags": [
-      "window",
-      "dom",
-      "events"
-    ],
-    "description": "State object you can listen to for changes to window width.",
-    "homepage": "https://github.com/henrikjoreteg/window-watcher",
-    "license": "MIT"
-  },
-  {
-    "id": "wildemitter",
-    "author": "andyet",
-    "tags": [
-      "events",
-      "emitter",
-      "browser"
-    ],
-    "description": "A super lightweight EventEmitter similar to what comes in Node.js, but with a support for wildcard events '*' and grouped handlers",
-    "homepage": "https://github.com/HenrikJoreteg/wildemitter#readme"
-  },
-  {
-    "id": "jingle",
-    "author": "lancestout",
-    "tags": [
-      "webrtc",
-      "xmpp",
-      "jingle"
-    ],
-    "description": "Generic Jingle via WebRTC session manager.",
-    "homepage": "https://github.com/otalk/jingle.js",
+    "homepage": "https://github.com/otalk/getUserMedia#readme",
     "license": "MIT"
   },
   {
@@ -1116,50 +1017,94 @@
     "license": "MIT"
   },
   {
-    "id": "webrtcsupport",
-    "author": "henrikjoreteg",
-    "tags": [
-      "browser",
-      "WebRTC"
-    ],
-    "description": "Browser module to detect support for webrtc and extract proper constructors.",
-    "homepage": "https://github.com/HenrikJoreteg/webrtcsupport#readme",
-    "license": "MIT"
-  },
-  {
-    "id": "simplewebrtc",
+    "id": "ampersand-select-view",
     "author": "andyet-ops",
-    "description": "World's easiest webrtc",
-    "homepage": "https://github.com/andyet/SimpleWebRTC#readme",
+    "tags": [
+      "ampersand",
+      "form",
+      "view",
+      "select"
+    ],
+    "description": "A view module for intelligently rendering and validating selectbox input. Works well with ampersand-form-view.",
+    "homepage": "https://github.com/AmpersandJS/ampersand-select-view",
     "license": "MIT"
   },
   {
-    "id": "stylizer",
-    "author": "latentflip",
-    "description": "Stylizer makes it super easy to integrate [Stylus](https://learnboost.github.io/stylus/), and stylus plugins, into a [Node.js](http://nodejs.org/)/[moonboots](https://github.com/HenrikJoreteg/moonboots) project.",
-    "homepage": "https://github.com/latentflip/stylizer#readme",
-    "license": "MIT"
-  },
-  {
-    "id": "reformer",
+    "id": "transform-style",
     "author": "henrikjoreteg",
     "tags": [
-      "form",
+      "styles",
+      "css",
+      "browserify"
+    ],
+    "description": "Apply transform style property with proper prefix to an element. For use with browserify / CommonJS.",
+    "homepage": "https://github.com/HenrikJoreteg/transform-style#readme",
+    "license": "MIT"
+  },
+  {
+    "id": "ampersand-model",
+    "author": "dhritzkiv",
+    "tags": [
+      "model, ampersand, state"
+    ],
+    "description": "An extension to ampersand-state that adds methods and properties for working with a RESTful API.",
+    "homepage": "https://github.com/ampersandjs/ampersand-model",
+    "license": "MIT"
+  },
+  {
+    "id": "zepto-detect",
+    "author": "henrikjoreteg",
+    "tags": [
+      "zepto",
       "browser"
     ],
-    "description": "Super customizable, Self-contained, self-rendering, self-validating forms that can only output valid data."
+    "description": "The detect portion of zepto.js structured for use with browserify.",
+    "license": "MIT"
   },
   {
-    "id": "templatizer",
-    "author": "andyet-ops",
+    "id": "img",
+    "author": "kazmer",
     "tags": [
-      "browser",
-      "jade",
-      "templates"
+      "image",
+      "element",
+      "dom",
+      "tree",
+      "render",
+      "canvas"
     ],
-    "description": "Simple solution for compiling jade templates into vanilla JS functions for blazin' fast client-side use.",
-    "homepage": "https://github.com/HenrikJoreteg/templatizer",
+    "description": "Convert any dom tree to an image element",
+    "homepage": "https://github.com/modulesio/img#readme",
+    "license": "ISC"
+  },
+  {
+    "id": "ampersand-sync",
+    "author": "dhritzkiv",
+    "tags": [
+      "backbone",
+      "sync",
+      "rest",
+      "ampersand"
+    ],
+    "description": "Provides sync behavior for updating data from ampersand models and collections to the server.",
+    "homepage": "https://github.com/ampersandjs/ampersand-sync",
     "license": "MIT"
+  },
+  {
+    "id": "page",
+    "author": "tjholowaychuk",
+    "description": "Tiny client-side router",
+    "homepage": "https://github.com/visionmedia/page.js#readme",
+    "license": "MIT"
+  },
+  {
+    "id": "webrtc",
+    "author": "henrikjoreteg",
+    "tags": [
+      "webrtc",
+      "browser"
+    ],
+    "description": "WebRTC abstraction for making it simple to manage multiple peer connections of various types.",
+    "homepage": "https://github.com/henrikjoreteg/webrtc.js"
   },
   {
     "id": "stanza.io",
@@ -1180,13 +1125,68 @@
     "license": "MIT"
   },
   {
-    "id": "webrtc",
+    "id": "ampersand-view",
+    "author": "cdaringe",
+    "tags": [
+      "backbone",
+      "view",
+      "browser",
+      "browserify"
+    ],
+    "description": "A smart base view for Backbone apps, to make it easy to bind collections and properties to the DOM.",
+    "homepage": "https://github.com/ampersandjs/ampersand-view",
+    "license": "MIT"
+  },
+  {
+    "id": "async",
+    "author": "caolan",
+    "tags": [
+      "async",
+      "callback",
+      "module",
+      "utility"
+    ],
+    "description": "Higher-order functions and common patterns for asynchronous code",
+    "homepage": "https://github.com/caolan/async#readme",
+    "license": "MIT"
+  },
+  {
+    "id": "precommit-hook",
+    "author": "nlf",
+    "description": "A useful pre-commit hook for git based projects that lints and runs npm test",
+    "homepage": "https://github.com/nlf/precommit-hook",
+    "license": "MIT"
+  },
+  {
+    "id": "reformer",
     "author": "henrikjoreteg",
     "tags": [
-      "webrtc",
+      "form",
       "browser"
     ],
-    "description": "WebRTC abstraction for making it simple to manage multiple peer connections of various types.",
-    "homepage": "https://github.com/henrikjoreteg/webrtc.js"
+    "description": "Super customizable, Self-contained, self-rendering, self-validating forms that can only output valid data."
+  },
+  {
+    "id": "raf-component",
+    "author": "tjholowaychuk",
+    "tags": [
+      "animate",
+      "requestAnimationFrame",
+      "performance"
+    ],
+    "description": "request animation frame",
+    "homepage": "https://github.com/component/raf"
+  },
+  {
+    "id": "jingle",
+    "author": "lancestout",
+    "tags": [
+      "webrtc",
+      "xmpp",
+      "jingle"
+    ],
+    "description": "Generic Jingle via WebRTC session manager.",
+    "homepage": "https://github.com/otalk/jingle.js",
+    "license": "MIT"
   }
 ]
