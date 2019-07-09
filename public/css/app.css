@@ -7,7 +7,7 @@ html {
   font-size: 100%;
 }
 body {
-  font: 1em/1.65 'Sentinel SSm A', 'Sentinel SSm B', Georgia, Times, serif;
+  font: 1em/1.65 Georgia, Times, serif;
   font-weight: 400;
   color: #4d5659;
   text-rendering: optimizeLegibility;
@@ -47,8 +47,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }
 h1 {
   font-size: 1.6em;
@@ -86,7 +86,8 @@ a:hover {
   }
 }
 .navbar {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', Helvetica, Arial, sans-serif;
+  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+  font-weight: 500;
   position: relative;
   background: #fff;
   box-shadow: none;
@@ -102,7 +103,7 @@ a:hover {
   float: left;
   color: #272b2d;
   $font-size: 1.6em;
-  $font-weight: 800;
+  $font-weight: 700;
   text-shadow: none;
 }
 .navbar .navbar-brand span {
@@ -171,7 +172,7 @@ a:hover {
 .repo h3 small {
   padding-top: 5px;
   display: block;
-  font-family: 'Sentinel SSm A', 'Sentinel SSm B', Georgia, Times, serif;
+  font-family: Georgia, Times, serif;
   font-style: italic;
 }
 .repo .tags {
@@ -201,7 +202,8 @@ a:hover {
 .footer-main {
   padding: 40px 20px;
   border-top: 1px solid #f7f7f7;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', Helvetica, Arial, sans-serif;
+  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+  font-weight: 500;
   font-size: 0.85em;
   text-align: center;
   color: #828c8f;
@@ -230,9 +232,9 @@ a.button {
   border-radius: 3px;
   margin-top: 15px;
   padding: 6px 15px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', Helvetica, Arial, sans-serif;
+  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
   font-size: 1em;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
   line-height: 1.5;
   cursor: pointer;
