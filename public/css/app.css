@@ -87,7 +87,7 @@ a:hover {
 }
 .navbar {
   font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-  font-weight: $font-weight-semibld;
+  font-weight: 500;
   position: relative;
   background: #fff;
   box-shadow: none;
@@ -203,7 +203,7 @@ a:hover {
   padding: 40px 20px;
   border-top: 1px solid #f7f7f7;
   font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-  font-weight: $font-weight-semibld;
+  font-weight: 500;
   font-size: 0.85em;
   text-align: center;
   color: #828c8f;
