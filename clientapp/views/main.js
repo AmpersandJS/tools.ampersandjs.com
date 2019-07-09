@@ -23,7 +23,7 @@ module.exports = View.extend({
         // main renderer
         this.renderWithTemplate({me: me});
         // setting a favicon for fun (note, it's dyanamic)
-        setFavicon('/images/ampersand.png');
+        setFavicon('/images/logo-ampersand.png');
         //this.createGlobalNavShortcuts();
         return this;
     }
