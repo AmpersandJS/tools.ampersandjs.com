@@ -27,7 +27,7 @@
     "query-param-getter": "0.0.1",
     "semi-static": "0.0.4",
     "templatizer": "0.1.2",
-    "underscore": "^1.8.3"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "async": "^0.2.9",
