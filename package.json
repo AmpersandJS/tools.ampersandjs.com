@@ -33,7 +33,7 @@
     "async": "^0.2.9",
     "jshint": "^2.9.5",
     "module-details": "^2.0.1",
-    "precommit-hook": "0.3.6",
+    "precommit-hook": "3.0.0",
     "servedir": "*"
   },
   "homepage": "https://github.com/ampersandjs/tools.ampersandjs.com",
